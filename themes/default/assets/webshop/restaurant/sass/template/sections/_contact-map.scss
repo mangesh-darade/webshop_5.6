@@ -1,0 +1,8 @@
+.contact-map-layout1 {
+  width: 100%;
+  height: 550px;
+
+  @include md {
+    height: 400px;
+  }
+}

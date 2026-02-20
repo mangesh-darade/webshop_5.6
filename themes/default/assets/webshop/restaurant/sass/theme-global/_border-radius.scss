@@ -1,0 +1,17 @@
+.radius-circle {
+  border-radius: 50%;
+}
+
+.radius-50 {
+  border-radius: 50px;
+}
+
+.radius-100 {
+  border-radius: 100px;
+}
+
+@for $i from 0 through 10 {
+  .radius-#{1 * $i} {
+    border-radius: #{$i + px};
+  }
+}

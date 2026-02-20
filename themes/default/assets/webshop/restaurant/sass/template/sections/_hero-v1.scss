@@ -1,0 +1,104 @@
+.vs-hero-wrapper {
+  .hero-btn {
+    a {
+      line-height: inherit;
+      font-size: inherit;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+
+      [class*="mask-"],
+      [class*="mask-"] {
+        left: -1px;
+        top: -1px;
+        @include equal-size(103%);
+      }
+    }
+  }
+}
+
+
+.hero-shape1 {
+  position: absolute;
+  left: 10%;
+  bottom: -7%;
+  z-index: 31;
+}
+
+
+.ls-text-theme {
+  color: #fa8507 !important;
+}
+
+.ls-text-yellow {
+  color: #ffe119 !important;
+}
+
+.vs-hero-layout6{
+  .vs-btn.mask-style3{
+    color: $white-color;
+    background-color: $secondary-color;
+    &:hover{
+      color: $white-color;
+      background-color: #B80011; 
+    }
+  }
+  .ls-v6.navprevnext-white [class*="ls-gui-element ls-nav-"] {
+    transform: translateY(60%);
+    background-color: #ffffffc2;
+    color: $black-color;
+    display: block;
+    &:hover{
+      color: $white-color;
+      background-color: #b80012cc;
+    }
+  }
+}
+.vs-hero-layout7{
+  .ls-v6.navprevnext-white [class*="ls-gui-element ls-nav-"] {
+    transform: translateY(100%);
+    background-color: #ffffffc2;
+    color: $black-color;
+    display: block;
+    &:hover{
+      color: $white-color;
+      background-color: #b80012cc;
+    }
+  }
+  .vs-btn.mask-style3 {
+    color: $white-color;
+    background-color: $secondary-color;
+    &:hover{
+      color: $white-color;
+      background-color: #B80011;
+    }
+  }
+}
+
+
+@include lg{
+  .vs-hero-layout7,
+  .vs-hero-layout6{
+    .ls-v6.navprevnext-white [class*="ls-gui-element ls-nav-"] {
+      transform: translateY(0);
+      display: none;
+    } 
+  }
+    
+}
+
+
+@media (max-width: 1024px) {
+  .ls-layer .vs-btn {
+    font-size: 14px;
+    padding: 10px 33px;
+  }
+}
+
+@media (max-width: 767px) {
+  .ls-layer .vs-btn {
+    font-size: 12px;
+    padding: 3px 20px;
+  }
+}

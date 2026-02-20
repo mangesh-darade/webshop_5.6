@@ -1,0 +1,64 @@
+.vs-reservation-layout1 {
+  .container-fluid,
+  .container {
+    position: relative;
+    z-index: 9;
+  }
+
+  >.background-image.position-absolute {
+    @media (min-width: $lg) {
+      top: 80px;
+      bottom: 80px;
+      right: 0;
+      left: 0;
+      width: auto;
+      height: auto;
+    }
+  }
+}
+
+@media (min-width: $lg) and (max-width: $xl)  {
+  .vs-reservation-layout1 {
+    .vs-box2 {
+      &.mr-xl-200 {
+        margin-right: 0;
+      }
+
+      .reservation-form {
+        &.px-xl-100 {
+          padding-left: 50px;
+          padding-right: 50px;
+        }
+      }
+    }
+
+    .reservation-time {
+      &.mr-xl-140 {
+        margin-right: 0;
+      }
+    }
+
+  }
+}
+
+@include xl {
+  .vs-reservation-layout1 {
+    .reservation-time {
+      margin-left: auto;
+      margin-right: auto !important;
+      float: none !important;
+      max-width: 500px;
+    }
+  }
+}
+
+@include lg {
+  .vs-reservation-layout1 {
+    .vs-box2 {
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+  }
+}

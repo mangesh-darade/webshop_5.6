@@ -1,0 +1,214 @@
+.slick-track {
+  min-width: 100%;
+}
+
+.row>.slick-list {
+  width: 100%;
+  display: block;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.slick-arrow {
+  position: absolute;
+  left: -70px;
+  top: 50%;
+  color: $silver-color;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  font-size: 30px;
+  line-height: 1;
+  z-index: 2;
+  transform: translateY(-50%);
+
+  &.slick-next {
+    left: auto;
+    right: -70px;
+  }
+}
+
+.arrow-white {
+  .slick-arrow {
+    color: #ffffff;
+  }
+}
+
+.arrow-has-margin {
+  .slick-arrow {
+    top: calc(50% - 15px);
+  }
+}
+
+.slick-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  transform: translateX(-50%);
+
+  li {
+    display: inline-block;
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  button {
+    background-color: $silver-color;
+    border: 1px solid transparent;
+    font-size: 0;
+    padding: 0;
+    line-height: 0;
+    @include equal-size(10px);
+    border-radius: 50%;
+  }
+
+  li.slick-active {
+    button {
+      background-color: #ffffff;
+      transform: scale(1.2);
+    }
+  }
+}
+
+.slick-dots-white {
+  .slick-dots {
+    button {
+      background-color: #ffffff;
+    }
+  
+    li.slick-active {
+      button {
+        background-color: transparent;
+        border-color: #ffffff;
+      }
+    }
+  }
+}
+
+.slick-slide img {
+  display: inline-block;
+}
+
+
+.vs-3dcarousel {
+  .slick-slider {
+    margin-left: -12%;
+    margin-right: -12%;
+  }
+
+  .slick-list {
+    padding-left: 15% !important;
+    padding-right: 15% !important;
+  }
+
+  .slick-track {
+    max-width: 100% !important;
+    transform: translate3d(0, 0, 0) !important;
+    perspective: 100px;
+  }
+
+  .slick-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 0;
+    width: 100% !important;
+    transform: translate3d(0, 0, 0);
+    transition: transform 1s, opacity 1s, border-color 2s;
+  }
+
+  .slick-current {
+    opacity: 1;
+    position: relative;
+    display: block;
+    z-index: 2;
+  }
+
+  .vs-slick-next {
+    opacity: 1;
+    transform: translateX(-360px) translateZ(-20px) rotateY(3deg);
+    z-index: 1;
+    display: block;
+  }
+
+  .vs-slick-prev {
+    opacity: 1;
+    transform: translateX(360px) translateZ(-20px) rotateY(-3deg);
+    display: block;
+  }
+}
+
+
+
+@include sm {
+  .vs-3dcarousel {
+    .vs-slick-next {
+      transform: translateX(-35%) translateZ(-20px) rotateY(3deg);
+    }
+    
+    .vs-slick-prev {
+      transform: translateX(35%) translateZ(-20px) rotateY(-3deg);
+    }
+
+  }
+}
+
+
+
+
+
+.carousel-container {
+  max-width: 1220px;
+  padding: 0 50px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  @include ml {
+    max-width: 1200px;
+    padding: 0 45px;
+  }
+
+  @include lg {
+    max-width: 980px;
+    padding: 0 25px;
+  }
+
+  @include md {
+    max-width: 740px;
+    padding: 0 25px;
+  }
+
+  @include sm {
+    max-width: 560px;
+    padding: 0 25px;
+  }
+
+  @include xs {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .slick-list {
+    overflow: visible;
+  }
+
+  .slick-slide {
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 0.4s;
+    
+    &.slick-active {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+}

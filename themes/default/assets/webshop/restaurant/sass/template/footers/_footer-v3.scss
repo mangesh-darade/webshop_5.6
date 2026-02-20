@@ -1,0 +1,51 @@
+.footer-widget-layout3{
+   .social-links.links-has-border a {
+      color: $white-color;
+      border-color: $secondary-color;
+      background-color: $secondary-color;
+      &:hover{
+         background-color: rgba(184, 0, 17, 1);
+         border-color: rgba(184, 0, 17, 1);
+      }
+   }
+   .widget_title{
+      color: $white-color;
+      text-transform: uppercase;
+   }
+   .contact-info{
+      padding-left: 0;
+      color: #CCCCCC;
+   }
+   .contact-number{
+      a{
+         color: $secondary-color;
+         font-size: 24px;
+         font-weight: 400;
+         &:hover{
+            color: rgba(184, 0, 17, 1);
+         }
+      }
+   }
+   .vs-btn.style1{
+      padding: 17px 69px;
+      &:hover{
+         color: $white-color;
+         background-color: rgba(184, 0, 17, 1);
+      }
+   }
+   .widget{
+      margin-bottom: 0;
+   }
+   .widget-about-text {
+      color: #CCCCCC;
+   }
+}
+
+@include md{
+   .contact-info {
+      display: block;
+   }
+   .footer-widget-layout3 .widget {
+      margin-bottom: 60px;
+  }
+}

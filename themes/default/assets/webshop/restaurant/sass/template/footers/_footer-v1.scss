@@ -1,0 +1,145 @@
+.footer-copyright {
+  &.top-light-border {
+    border-top: 1px solid rgba(255,255,255,0.2);
+  }
+}
+
+
+.footer-widget-layout1 {
+  .widget_title {
+    margin-bottom: 35px;
+
+    &.text-20 {
+      margin-bottom: 30px;
+    }
+  }
+
+  .widget {
+    &.p-30 {
+      padding: 30px;
+    }
+    
+    &.px-30 {
+      padding-left: 30px!important;
+      padding-right: 30px!important;
+    }
+
+    &.py-40 {
+      padding-top: 40px!important;
+      padding-bottom: 40px!important;
+    }
+  }
+
+  .vs-widget-recent-post {
+    .recent-post-title {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 7px;
+      color: $white-color;
+
+      a {
+        color: inherit;
+      }
+
+      + a {
+        font-size: 14px;
+        color: $body-color;
+
+        i {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+.footer-bottom-menu {
+  li {
+    margin-right: 40px;
+    display: inline-block;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+.dark-footer {
+  a,p,h1,h2,h3,h4,h5,h6,span,
+  .widget_title,
+  .widget_nav_menu a,
+  .widget_categories li>a,
+  .widget_archive li>a, 
+  .widget_meta a,
+  .widget_pages a
+  { 
+    color: $white-color;
+  }
+
+  .social-links.links-has-border a {
+    background-color: $secondary-color;
+    border-color: rgba(255,255,255,0.20);
+    &:hover{
+      background-color: transparent;
+    }
+  }
+
+  .tagcloud {
+    a {
+      color: $body-color;
+      background-color: $white-color;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  .footer-widget-wrapper {
+    border-color: rgba($color: #fff, $alpha: 0.10) !important;
+  }
+
+  .widget_title,
+  .social-links  a {
+    color: $white-color;
+
+  }
+  .widget_nav_menu a:before {
+    color: $secondary-color;
+  }
+
+}
+
+
+.dark-footer .bg-white {
+  border-width: 0;
+  border-top-width: 5px;
+  border-style: solid;
+
+  .widget_title {
+    color: $title-color;
+  }
+
+  .recent-post-title {
+    color: $title-color;
+
+    a {
+      color: inherit;
+    }
+  }
+
+  span {
+    color: $body-color;
+  }
+}
+
+
+.widget_title.text-20 {
+  font-size: 20px !important;
+}
+
+
+@include xs {
+  .footer-widget-layout1 .widget.p-30,
+  .footer-widget-layout1 .widget.px-30.py-40 {
+    padding: 15px !important;
+  }
+}

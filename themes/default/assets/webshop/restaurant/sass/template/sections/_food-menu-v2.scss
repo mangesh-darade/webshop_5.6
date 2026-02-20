@@ -1,0 +1,90 @@
+.food-menu-style2 {
+  a {
+    background-color: $smoke-color;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.08);
+    display: block;
+    position: relative;
+    margin-bottom: 15px;
+    
+    .btn-text {
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+      font-weight: 600;
+      padding: 11px 0;
+      display: block;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      @include equal-size(22px);
+      margin-bottom: -11px;
+      background-color: inherit;
+      transform: translateX(-50%) rotate(45deg);
+      border-bottom: 1px solid;
+      border-right: 1px solid;
+      border-color: inherit;
+    }
+
+    .btn-icon {
+      display: block;
+      padding: 25px 0;
+      transition: all ease 0.4s;
+    }
+
+    &.active,
+    &:hover {
+      
+      &,
+      .btn-icon {
+        border-color: transparent;
+        color: #ffffff !important;
+      }
+
+      .btn-text {
+        border-color: rgba(255,255,255,0.40);
+      }
+    }
+
+  }
+
+  ul {
+    display: grid;
+    grid-column-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+@include md {
+  .food-menu-style2 {
+    a {
+      &:before {
+        display: none;
+      }
+    }
+
+    ul {
+      grid-column-gap: 15px;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-content: center;
+    }
+  }
+}
+
+
+@include md {
+  .food-menu-style2 {
+    a {
+      display: block;
+      min-width: 200px;
+    }
+
+    ul {
+      display: block;
+    }
+  }
+}

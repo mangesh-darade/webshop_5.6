@@ -1,0 +1,160 @@
+.food-box-layout1 {
+
+  .shape1 {
+    left: 110px;
+    top: 225px;
+  }
+
+  .shape2 {
+    bottom: 100px;
+    right: 0;
+  }
+
+  .media-thumb {
+    @include equal-size(120px);
+    position: relative;
+  }
+
+  .food-price {      
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: -40px;
+    padding: 7px 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0px -16px 32px 0px rgba(0, 0, 0, 0.06);
+  }
+
+  .media-body {
+    border-top: 1px dashed #d9d9d9;
+    border-bottom: 1px dashed #d9d9d9;
+    position: relative;
+    
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 1px;
+      height: 20px;
+      border-left: 1px dashed #d9d9d9;
+    }
+
+    &:after {
+      top: auto;
+      bottom: 0;
+    }
+  }
+
+  .food-rating-icon {
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+
+  .vs-food-box {
+    margin-bottom: 30px;
+
+    &:nth-child(odd) {
+      .media {
+        flex-direction: row-reverse;
+      }
+
+      .food-rating-icon {
+        right: auto;
+        left: -10px;
+      }
+
+      .food-content {
+        // text-align: right;
+        // padding-left: 10px;
+      }
+
+      .media-body {
+        &:before,
+        &:after {
+          right: auto;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  .left-align {
+    .vs-food-box {
+      &:nth-child(odd) {
+        .media {
+          flex-direction: row;
+        }
+      }
+
+      .food-rating-icon {
+        right: -10px;
+        left: auto;
+      }
+
+      .food-content {
+        text-align: left;
+      }
+
+      .media-body {
+        &:before,
+        &:after {
+          right: 0;
+          left: auto;
+        }
+      }
+    }
+  }
+}
+
+
+@include xl {
+  
+  .food-box-layout1 {
+    .shape2,
+    .shape1 {
+      display: none;
+    }
+  }
+}
+
+
+@include md {
+  .food-box-layout1 { 
+    .media-thumb {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+    }
+
+    .left-align .vs-food-box:nth-child(2n+1) .food-content,
+    .vs-food-box:nth-child(2n+1) .food-content,
+    .vs-food-box {
+      text-align: center;
+    }
+  
+
+    .food-content {
+      padding: 0;
+    }
+
+    .media-body {
+      border: none;
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+
+    .food-rating-icon {
+      display: none;
+    }
+  }
+}

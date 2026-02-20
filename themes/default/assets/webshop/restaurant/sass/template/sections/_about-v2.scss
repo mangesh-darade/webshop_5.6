@@ -1,0 +1,66 @@
+.about-image-box2 {
+  .about-image2 {
+    position: absolute;
+    bottom: 0;
+    right: -135px;
+    z-index: 3;
+  }
+}
+
+.vs-about-layout2 {
+  .about-subtitle {
+    line-height: 30px;
+  }
+
+  .shape2 {
+    right: 0;
+    bottom: -80px;
+  }
+
+  .shape1 {
+    left: 100px;
+    bottom: 250px;
+  }
+}
+
+
+@media (max-width: 1800px) {
+  .vs-about-layout2 {
+    .shape2 {
+      max-width: 300px;
+    }
+  }
+}
+
+@include lg {
+  .about-image-box2 {
+    .about-image2 {
+      right: -40px;
+    }
+  }
+}
+
+
+@include md {
+  .about-image-box2 {
+    .about-image2 {
+      position: relative;
+      top: 0;
+      right: 0;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@include xs {
+  .vs-about-layout2 {
+    .about-title {
+      font-size: 26px;
+      margin-top: -4px;
+    }
+  }
+}

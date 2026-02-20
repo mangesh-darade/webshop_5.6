@@ -1,0 +1,14 @@
+/* .article-nav,
+.main-sidebar,
+body > footer,
+header {
+  display: none !important;
+} */
+.main-content {
+  width: 100% !important;
+}
+@media print {
+  a[href]:after {
+    content: none;
+  }
+}

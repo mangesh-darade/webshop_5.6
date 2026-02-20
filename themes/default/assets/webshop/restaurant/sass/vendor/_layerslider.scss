@@ -1,0 +1,179 @@
+.ls-v6 {
+
+  [class*="ls-gui-element ls-nav-"] {
+    @include equal-size(80px);
+    margin-top: -40px;
+    z-index: 10000;
+    color: #fff;
+    top: 50%;
+    position: absolute;
+    text-align: center;
+    left: 80px;
+    border-radius: 50%;
+    transition: all ease 0.4s !important;
+
+    @include xl {
+      left: 40px;
+    }
+
+    &:after {
+      content: '\f053';
+      font-family: $icon-font;
+      text-align: center;
+      color: inherit;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 80px;
+      color: inherit;
+    }
+
+    &:hover {
+      color: $body-color;
+      background-color: #fff;
+    }
+  }
+
+  .ls-nav-next {
+    left: auto;
+    right: 80px;
+
+    @include xl {
+      right: 40px;
+    }
+
+    &:after {
+      content: '\f054';
+    }
+  }
+
+  
+  &.navprevnext-white {
+    [class*="ls-gui-element ls-nav-"] {
+      background-color: rgba($color: #fff, $alpha: 0.20);
+      color: #fff;
+
+      &:hover {
+        background-color: rgba($color: #fff, $alpha: 1);
+        color: $body-color;
+      }
+    }
+  }
+  
+  
+}
+
+.ls-bottom-nav-wrapper {
+  .ls-bottom-slidebuttons {
+    bottom: 20px;
+
+    a {
+      background-color: $silver-color;
+      width: 8px;
+      height: 8px;
+      position: relative;
+      margin-right: 15px;
+      border: 2px solid transparent !important;
+      border-color: transparent;
+      text-align: center;
+      margin-left: 0;
+      display: inline-block; 
+      z-index: 10000;
+      border-radius: 50%;
+      transition: all ease 0.4s !important;
+
+
+      &:last-of-type,
+      &:last-child {
+        margin-right: 0;
+      }
+
+
+      &.ls-nav-active {
+        transform: scale(1.4);
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.navbuttons-white {
+  .ls-bottom-nav-wrapper {
+    .ls-bottom-slidebuttons {
+      a {
+        background-color: rgba($color: #fff, $alpha: 1);
+
+        &.ls-nav-active {
+          background-color: transparent;
+          border-color: #fff !important;
+        }
+      }
+    }
+  }
+}
+
+
+@include ml {
+  .ls-v6 {
+    [class*="ls-gui-element ls-nav-"] {
+      width: 40px;
+      height: 40px;
+      margin-top: -20px;
+      left: 30px;
+
+      &:after {
+        line-height: 40px;
+        font-size: 12px;
+      }
+    }
+
+    .ls-nav-next {
+      left: auto;
+      right: 30px;
+    }
+  }
+
+  .ls-bottom-nav-wrapper {
+    .ls-bottom-slidebuttons {
+      bottom: 0px;
+
+      a {
+        @include equal-size(5px)
+      }
+    }
+  }
+
+
+}
+
+
+@include sm {
+  .ls-v6 {
+    [class*="ls-gui-element ls-nav-"] {
+      width: 30px;
+      height: 30px;
+      margin-top: -15px;
+      left: 10px;
+
+      &:after {
+        line-height: 30px;
+        font-size: 10px;
+      }
+    }
+
+    .ls-nav-next {
+      left: auto;
+      right: 10px;
+    }
+  }
+  .ls-bottom-nav-wrapper {
+    .ls-bottom-slidebuttons {
+      bottom: -7px;
+  
+      a {
+        @include equal-size(4px);
+        border-width: 1px;
+        margin-right: 10px;
+      }
+    }
+  }
+}

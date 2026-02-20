@@ -1,0 +1,28 @@
+/* header {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+nav,
+header .show-nav,
+header .show-nav img,
+header .show-search,
+header .show-search img,
+header .search-contain {
+  display: none;
+}
+body > footer {
+  background: #fff;
+  color: #000;
+  border-top: 1px solid #ddd;
+}
+body > footer .column a {
+  color: #000;
+}
+body > footer .fine-print {
+  color: #999;
+}
+body > footer .sharing-links a {
+  color: #fff;
+}
+header .show-my-account {
+  display: none !important;
+} */

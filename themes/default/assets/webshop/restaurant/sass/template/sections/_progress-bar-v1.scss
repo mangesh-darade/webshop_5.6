@@ -1,0 +1,22 @@
+.vs-progress-layout1 {
+  .bar-progress {
+    height: 3px;
+    margin-top: 2px;
+    background-color: #e9e9e9;
+  }
+
+  .progress-text {
+    position: absolute;
+    right: -20px;
+    top: -27px;
+  }
+
+  .progress-value {
+    position: relative;
+    height: 100%;
+    i {
+      font-style: normal;
+    }
+  }
+
+}

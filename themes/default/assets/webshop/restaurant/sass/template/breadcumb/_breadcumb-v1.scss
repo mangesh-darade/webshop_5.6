@@ -1,0 +1,59 @@
+.breadcumb-menu-style1 {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  z-index: 2;
+  transform: translateX(-50%) translateY(50%);
+  margin: 0;
+  padding: 17px 38px;
+  border-radius: 50px;
+  box-shadow: 0px 1px 100px 0px rgba(0, 0, 0, 0.15);
+  max-width: 100%;
+  text-align: center;
+
+  @include sm {
+    width: 80%;
+  }
+
+  @include xs {
+    width: 90%;
+  }
+
+
+  li {
+    display: inline-block;
+    margin: 0 6px;
+    list-style: none;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    &:after {
+      content: '-';
+      position: relative;
+      right: -7px;
+      float: right;
+    }
+  }
+
+  li,
+  a,
+  span {
+    color: $body-color;
+    white-space: normal;
+    word-break: break-all;
+    
+    i {
+      margin-right: 5px;
+    }
+  }
+}

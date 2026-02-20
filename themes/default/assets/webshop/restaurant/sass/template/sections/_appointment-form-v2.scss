@@ -1,0 +1,48 @@
+.appointment-form-style2 {
+  .vs-btn {
+    font-size: 16px;
+    // padding: 0;
+    height: 70px;
+    font-weight: 700;
+  }
+
+  .form-control {
+    height: 70px;
+    border-radius: 9999px;
+    padding-left: 30px;
+    padding-right: 50px;
+    font-size: 16px;
+    position: relative;
+    z-index: 31;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+    
+    &,
+    &:focus {
+      color: $white-color;
+      border: 2px solid rgba($color: #fff, $alpha: 0.20);
+      background-color: $title-color;
+    }
+    
+    @include inputPlaceholder {
+      color: #7d8f95;
+    }
+  }
+
+
+  textarea {
+    &.form-control {
+      border-radius: 30px;
+      padding-left: 30px;
+      min-height: 155px;
+    }
+  }
+
+  .form-group > i {
+    right: auto !important;
+    top: 24px;
+    right: 45px !important;
+    color: #131f24;
+    z-index: 34;
+    color: #7d8f95;
+  }
+}

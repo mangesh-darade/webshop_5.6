@@ -1,0 +1,53 @@
+.food-slider-layout1 {
+
+  .food-slide-title {
+    position: absolute;
+    left: 40px;
+    bottom: 18px;
+    z-index: 3;
+
+    @media (min-width: $xl) {
+      font-size: 40px;
+    }
+  }
+
+  .food-slide-box {
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 80%;
+      z-index: 1;
+      opacity: 0.6;
+      background-image: linear-gradient(to top, $black-color 20%, rgba(0,0,0,0) 70%);
+    }
+  }
+
+
+  .slick-arrow {
+    left: auto;
+    right: 0;
+    top: 0;
+    transform: translate(0, 0);
+    @include equal-size(40px);
+    line-height: 40px;
+    color: #ffffff;
+    font-size: 16px;
+
+    &.slick-prev {
+      right: 40px;
+      padding-left: 10px;
+      border-bottom-left-radius: 18px;
+    }
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
+
+
+}

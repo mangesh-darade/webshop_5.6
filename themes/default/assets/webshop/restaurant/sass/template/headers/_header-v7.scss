@@ -1,0 +1,65 @@
+.header-layout7{
+   position: absolute;
+   left: 0;
+   top: 0;
+   right: 0;
+   z-index: 91;
+   width: 100%;
+   .header-menu{
+      background-color: rgba(0, 0, 0, 1);
+   }
+   .contact-info{
+      .text-font1{
+         margin-bottom: 0;
+         color: $white-color;
+      }
+   }
+   .icon-btn{
+         margin-right: 10px;
+         font-size: 28px;
+         color: $white-color;
+         background-color: $secondary-color;
+         transition: all 0.4s ease;
+         cursor: pointer;
+         &:hover{
+            background-color: #B80011;
+         }
+         .number{
+            background-color: #B80011;
+            transition: all ease 0.4s;
+          }
+          &:hover{
+            background-color: #B80011;
+            .number{
+              background-color: $secondary-color;
+            }
+          }
+   }
+   .header-logo {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+   }
+   .menu-style3 > ul > li > a {
+   padding: 37px 0;
+   }
+   .header-btn {
+      display: flex;
+      align-items: center;
+      position: relative;
+   }
+   .vs-btn.mask-style1 {
+      background-color: $secondary-color;
+      color: $white-color;
+      &:hover{
+         background-color: #B80011;
+      }
+      i {
+         margin-right: 5px;
+         font-size: 22px;
+         position: relative;
+         bottom: -2px;
+      }
+   }
+}
+

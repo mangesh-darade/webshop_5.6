@@ -1,0 +1,35 @@
+.header-layout4 {
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 91;
+}
+
+
+@media (max-width: 1600px) {
+  .header-layout4 {
+    &.px-lg-100 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+
+@include ml {
+  .header-layout4 {
+
+    .pl-xl-50 {
+      padding-left: 10px;
+    }
+  }
+}
+
+
+@include md {
+  .header-layout4 {
+    &.position-absolute {
+      position: relative !important;
+    }
+  }
+}

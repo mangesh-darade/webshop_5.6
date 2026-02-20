@@ -1,0 +1,86 @@
+.vs-feature-layout1 {
+  .vs-feature {
+    position: relative;
+    padding: 60px;
+    padding-bottom: 55px;
+    padding-right: 40px;
+
+  }
+  
+  .arrow-sign {
+    color: $white-color;
+    position: absolute;
+    right: 26px;
+    top: 20px;
+    font-weight: 300;
+    font-size: 2rem;
+    z-index: 4;
+    transform: rotate(45deg);
+    margin: 20px 20px 0 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 0.4s;
+  }
+
+  
+  .feature-icon {
+    display: block;
+  }
+
+  .feature-content {
+    position: relative;
+    z-index: 3;
+  }
+
+  .feature-img {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 0.4s;
+  }
+
+
+  .slick-center .vs-feature,
+  .vs-feature:hover {
+    .feature-img {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .arrow-sign {
+      opacity: 1;
+      visibility: visible;
+      margin: 0 0 0 0;
+    }
+  }
+
+  .inner-wrapper {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+}
+
+
+@include ml {
+  .vs-feature-layout1 {
+    .vs-feature {
+      padding: 30px;
+    }
+  }
+}
+
+
+@include sm {
+  .vs-feature-layout1 {
+    .inner-wrapper {
+      max-width: 360px;
+    }
+
+    .feature-img {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

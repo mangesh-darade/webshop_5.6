@@ -1,0 +1,20 @@
+.vs-reservation-layout2 {
+  .shape1 {
+    bottom: 270px;
+    left: 100px;
+  }
+
+  .shape2 {
+    top: 330px;
+    right: 100px;
+  }
+}
+
+@include xl {
+  .vs-reservation-layout2 {
+    .shape1,
+    .shape2 {
+      display: none;
+    }
+  }
+}

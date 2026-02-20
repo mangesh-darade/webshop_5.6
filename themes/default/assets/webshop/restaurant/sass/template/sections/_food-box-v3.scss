@@ -1,0 +1,86 @@
+.food-box-layout3 {
+  .shape1 {
+    bottom: 0;
+    right: 0;
+  }
+  
+  .food-image {
+    position: relative;
+  }
+
+
+  .food-price {
+    display: inline-block;
+    text-align: center;
+    width: fit-content;
+    position: absolute;
+    right: 40px;
+    top: -22.5px;
+    font-size: 18px;
+    font-weight: 700;
+    min-width: 116px;
+    padding: 10px 35px;
+    z-index: 1;
+    z-index: 41;
+    color: $white-color;
+    box-shadow: 0px 1px 51px 0px rgba(0, 0, 0, 0.03);
+    border-radius: 9999px;
+  }
+  
+  
+
+  .food-content {
+    position: relative;
+    padding: 40px;
+    padding-bottom: 37px;
+  }
+
+
+  .vs-food-box {
+    margin-bottom: 30px;
+    border: 2px solid #f2f2f2;
+    position: relative;
+    background-color: $white-color;
+
+    .vs-btn {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 9.5px 0;
+      font-size: 16px;
+      top: 0;
+      opacity: 0;
+      visibility: hidden;
+      min-width: 130px;
+    }
+
+    &:hover {
+      .vs-btn {
+        top: 30px;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+}
+
+@include lg {
+  .food-box-layout3 {
+    .food-content {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 15px;
+    }
+  }
+}
+
+@include sm {
+  .food-box-layout3 {
+    .food-content {
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 17px;
+    }
+  }
+}

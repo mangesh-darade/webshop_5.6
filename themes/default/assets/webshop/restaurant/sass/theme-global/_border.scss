@@ -1,0 +1,11 @@
+@each $themeColor, $value in $themeColor {
+  .border-#{$themeColor} {
+    border-color: #{$value};
+  }
+}
+
+@for $i from 1 through 10 {
+  .border-#{1 * $i} {
+    border-width: #{$i + px} !important;
+  }
+}

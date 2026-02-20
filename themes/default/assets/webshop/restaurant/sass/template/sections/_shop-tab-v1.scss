@@ -1,0 +1,61 @@
+.product-tab-style1 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #eee;
+
+  li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      display: inline-block;
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: capitalize;
+      padding-bottom: 10px;
+      position: relative;
+      color: $body-color;
+
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        width: 0;
+        height: 1px;
+        transition: all ease 0.4s;
+      }
+      
+      &.active {
+        &:before {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+
+@include md {
+  .product-tab-style1 {
+    li {
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+      
+      a {
+        font-size: 16px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}

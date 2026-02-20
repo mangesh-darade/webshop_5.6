@@ -1,0 +1,181 @@
+.ani-moving-x,
+.ani-moving-y,
+.ani-moving {
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+
+.ripple-light-animation,
+.ripple-animation {
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.ripple-animation { 
+  animation-name: ripple;
+}
+
+.ripple-light-animation {
+  animation-name: ripple-light;
+}
+
+.ripple-ani-delay {
+  animation-delay: 2s;
+}
+
+
+.ani-cspine {
+  animation: cspine 20s linear infinite;
+}
+
+
+.ani-cspinereverse {
+  animation: cspinereverse 20s linear infinite;
+}
+
+
+@keyframes ripple {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0.70;
+  }
+
+  100% {
+    transform: scale(1.7);
+    opacity: 0;
+  }
+}
+
+@keyframes ripple-light {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0.40;
+  }
+
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+
+@keyframes maskAnimation {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
+@keyframes maskAnimation2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+
+
+.ani-moving {
+  animation-name: moving;
+}
+
+@keyframes moving {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  20% {
+    transform: translate(0px, -20px);
+  }
+
+  50% {
+    transform: translate(-20px, -20px);
+  }
+
+  70% {
+    transform: translate(-20px, 0px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+
+.ani-moving-y {
+  animation-name: moving-y;
+}
+
+@keyframes moving-y {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    transform: translate(0, -20px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.ani-moving-x {
+  animation-name: moving-x;
+}
+
+@keyframes moving-x {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    transform: translate(-20px, 0);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+
+@keyframes cspine {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes cspinereverse {
+  from {
+    transform: rotate(359deg);
+  }
+
+  to {
+    transform: rotate(0);
+  }
+}
+

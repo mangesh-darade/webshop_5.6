@@ -1,0 +1,44 @@
+.vs-brand-layout1 {
+  position: relative;
+  &.background-image {
+    background-size: 100% auto;
+  }
+
+  .vs-brand {
+    text-align: center;
+  }
+
+  .shape1 {
+    left: 0;
+    bottom: 0;
+    max-width: 200px;
+  }
+
+  .shape2 {
+    right: 0;
+    bottom: 0;
+    height: auto;
+    max-width: 400px;
+  }
+
+  .container {
+    position: relative;
+    z-index: 3
+  }
+
+}
+
+
+@include xl {
+  .vs-brand-layout1 {
+
+    .shape2 {
+      text-align: right;
+    }
+    
+    .shape1,
+    .shape2 {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,271 @@
+.food-box-layout5{
+   position: relative;
+   overflow: hidden;
+   &.background-image{
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: left bottom;
+   }
+   .media {
+      display: block;
+      background-color: #ffffff;
+      overflow: hidden;
+   }
+   .media-thumb{
+      border-radius: 50px;
+      img{
+         width: 100%;
+         border-radius: 50px;
+      }
+      .thumb-icon{
+         position: absolute;
+         right: 12%;
+         width: 113px;
+         height: 113px;
+         line-height: 5;
+         border-radius: 100%;
+         background-color: $secondary-color;
+         text-align: center;
+         border: 10px solid #ffffff;
+         transform: translateY(-50%);
+         transition: all 0.5s ease;
+         img{
+            max-width: 52px;
+         }
+         &:hover{
+            background-color: #B80011;
+            border-color: $secondary-color;
+         }
+      }
+   }
+   .food-content{
+      margin-top: 8px;
+      .food-list-title{
+         font-size: 20px;
+         margin-bottom: 5px;
+         a{
+            color: #000000;
+            font-weight: 700;
+            &:hover{
+               color: $secondary-color;
+            }  
+         }
+      }
+   }
+   .media-body {
+      padding: 85px 14px 14px 14px;
+      border: 1px solid #BDBDBD;
+      border-top: 0;
+      margin-top: -50px;
+      border-radius: 0 0 50px 50px;
+      .food-title{
+         font-weight: 700;
+         margin-top: 0;
+         margin-bottom: 0;
+      }
+   }
+   .vs-food-box{
+      margin: 0 26px;
+   }
+  .vs-food-box {
+   display: flex;
+   align-items: center;
+   border-bottom: none;
+   &:not(:last-child){
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #BDBDBD;
+   }
+      .food-image {
+         margin-right: 18px;
+         max-width: 108px;
+         max-height: 110px;
+         border-radius: 50%;
+         box-shadow: 0px 1px 16px 0px rgb(0 0 0 / 30%);
+         img{
+            border-radius: 50%;
+         }
+      }   
+   }
+   .vs-btn{
+      &.style3{
+      border: 1px solid $secondary-color;
+      background-color: $secondary-color;
+      color: $white-color;
+      &:hover{
+         color: $white-color;
+         background-color: #B80011;
+         border-color: #B80011;
+        }
+      }
+      &.style1{
+         &:hover{
+            background-color: #B80011;
+            color: $white-color;
+         }
+      }
+   }
+   &.vs-food-box-wrapper{
+      background-color: #FFE9B5;
+      &::after{
+         content: "";
+         position: absolute;
+         width: 105.5%;
+         height: 510px;
+         right: -48%;
+         background-color: rgb(184, 0, 17);
+         bottom: 0;
+         z-index: 0;
+       }
+   }
+   .discount-body{
+      .discount-content{
+         .sec-title1{
+            font-size: 50px;
+            line-height: 66px;
+         }
+         .discount-text{
+            font-size: 18px;
+         }
+      }
+      .food-price{
+         font-size: 45px;
+         margin-top: 50px;
+         margin-bottom: 50px;
+         display: block;
+         color: $secondary-color;
+         del{
+            font-size: 18px;
+            color: #444444;
+         }
+      }
+   }
+   .discount-area{
+      position: relative;
+      z-index: 1;
+      .discount-img{
+         position: relative;
+         margin-top: 36px;
+         .discount-tag {
+            position: absolute;
+            top: 15%;
+            left: 10%;
+        }
+      }
+   }
+   .shep-1{
+      position: absolute;
+      right: 5%;
+      top: 10%;
+   }
+   .section-title {
+      margin-bottom: 40px;
+  }
+  .discount-body {
+      margin-top: 50px;
+   }
+}
+.food-price2{
+   font-size: 20px;
+   color: $secondary-color;
+   font-weight: 700;
+  del{
+     color: #444444;
+     font-size: 14px;
+     margin-right: 5px;
+  }
+}
+
+
+.countup {
+   position: relative;
+   text-align: center;
+   z-index: 1;
+}
+.countup .timeel {
+display: inline-block;
+font-size: 50px;
+margin: 0;
+color: white;
+border-radius: 10px 0 0 10px;
+margin-left: 50px;
+font-family: $theme-font1;
+&:first-child{
+   margin-left: 0;
+}
+
+}
+.countup span[class*="timeRef"] {
+margin-left: 0;
+color: $white-color;
+font-size: 16px;
+}
+@include lg{
+   .food-box-layout5{
+      &.vs-food-box-wrapper{
+         &::after{
+            display: none;
+         }
+      }
+      .countup .timeel{
+         color: $black-color;
+      }
+      .media{
+         margin-bottom: 30px;
+      }
+      .discount-body{
+         margin-bottom: 0;
+      }
+   }
+
+   
+}
+@include md{
+   .food-box-layout5{
+      .vs-food-box{
+         margin: 0;
+         .food-image{
+            width: 90px;
+         }
+      } 
+      .food-content{
+         .food-list-title {
+            font-size: 18px;
+        }
+      } 
+      .media{
+         margin-bottom: 30px;
+      }
+      &.vs-food-box-wrapper{
+        &::after{
+           display: none;
+        }
+      }
+      .discount-body .discount-content .sec-title1 {
+      font-size: 24px;
+      line-height: 150%;
+      }
+      .discount-body {
+         margin-top: 0px;
+      }
+      .media-thumb {
+         margin-bottom: 30px;
+      }
+      .media-body {
+         padding-top: 110px;
+         margin-top: -78px;
+      }
+   } 
+   .food-box-layout5.vs-food-box-wrapper .sec-title1{
+      font-size: 32px;
+   }
+   .countup {
+      display: none;
+   } 
+}
+
+@include xs{
+   .discount-area .discount-img .discount-tag {
+      max-width: 100px;
+   }
+}

@@ -1,0 +1,528 @@
+.header-layout9{
+   position: relative;
+   width: 100%;
+   z-index: 1;
+   .header-top{
+      background-color: $secondary-color;
+      padding: 5px 0;
+      .social-links2{
+         ul{
+            margin-bottom: 0;
+            li{
+               list-style: none;
+               display: inline-block;
+               margin-right: 20px;
+               &:last-child{
+                  margin-right: 0;
+               }
+               a{
+                  color: $black-color;
+                  &:hover{
+                     color: $white-color;
+                  }
+               }
+            }
+         }
+      }
+      .contact-info{
+         line-height: 100%;
+         a{
+            color: $black-color;
+            font-size: 14px;
+            font-weight: 400;
+            &:hover{
+               color: $white-color;
+            }
+         }
+         i{
+            color: $black-color;
+            font-size: 16px;
+            top: 0;
+         }
+      }
+   }
+   .icon-btn {
+      width: 44px;
+      height: 44px;
+      line-height: 44px;
+      margin-right: 0;
+      background-color: $secondary-color;
+      i{
+         color: $white-color;
+      }
+      .number {
+         top: -5px;
+         right: -5px;
+         background-color: $white-color;
+         color: $secondary-color;
+         transition: all 0.5s ease;
+      }
+      &:hover{
+         background-color: $white-color;
+         i{
+            color: $secondary-color;
+         }
+         .number{
+            background-color: $secondary-color;
+            color: $white-color;
+         } 
+      }
+   }
+   .header-menu{
+      background-color: $dark-color;
+      padding: 5px 0;
+   }
+   .main-menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 50px;
+   }
+   .header-right {
+      .media-icon2{
+         color: $secondary-color;
+         font-size: 40px;
+         margin-right: 24px;
+      }
+   }
+   .media-body{
+      margin-right: 25px;
+      .sub-text{
+         color: $white-color;
+      }
+   }   
+}
+.vs-hero-layout3{
+   position: relative;
+   z-index: 0;
+   .ls-v6 [class*="ls-gui-element ls-nav-"]{
+      width: 65px;
+      height: 65px;
+      background-color: $secondary-color;
+      &::after{
+         line-height: 65px;
+      }
+   }
+}
+.vs-about-layout10{
+   .image-box4{
+      text-align: right;
+      padding-right: 30px;
+      .small-img {
+         position: absolute;
+         bottom: 8%;
+         left: -25%;
+         img{
+            border: none;
+         }
+      }
+      .about-image2 {
+         position: absolute;
+         right: -87px;
+         bottom: 22%;
+         border: none;
+         z-index: 1;
+      }
+   }
+   .features-area{
+      .media{
+         margin-bottom: 50px;
+      }
+   }
+   .vs-btn-group{
+      .style1{
+         background-color: $black-color;
+         &:hover{
+            color: $white-color;
+            background-color: $secondary-color;
+         }
+      }
+   }
+   
+}
+.add-area{
+   .marquee-title{
+      font-size: 140px;
+      margin-bottom: 0;
+   }
+}
+.appointment-form-layout3 {
+   box-shadow: 0px 1px 100px 0px rgba(0, 0, 0, 0.08);
+   .section-title{
+      margin-bottom: 50px;
+      .sec-subtitle{
+         color: $secondary-color;
+      }
+      .sec-title1{
+         margin-bottom: 0;
+      }
+   }
+   .appointment-form-style2{
+      .form-control{
+         color: $black-color;
+         border-radius: 0;
+         background-color: $white-color;
+         min-height: 60px;
+      }
+      .form-group > i{
+         color: $secondary-color;
+      }
+   }
+   .from-area{
+      padding-top: 120px;
+   }
+   .vs-btn{
+      &:hover{
+         color: $white-color;
+         background-color: $black-color;
+      }
+   }
+}
+.counter-layout2{
+   position: relative;
+   transform: translateY(45%);
+   z-index: 9;
+   .counter-style1 {
+      padding: 80px 0px 80px 50px;
+   }
+}
+.food-box-layout3{
+   .food-box1{
+      .food-content{
+         padding: 60px 40px 30px 40px;
+         .food-price{
+            right: unset;
+            left: 30px;
+         }
+      }
+   }
+}
+.vs-blog-layout6{
+   .blog-left {
+      max-height: 770px;
+      padding-top: 436px;
+   }
+   .blog-style1{
+      padding-top: 146px;
+      .blog-body{
+         color: $white-color;
+         border-bottom: 1px solid #C6C6C6;
+         padding-bottom: 5px;
+         margin-bottom: 16px;
+      }
+      .blog-content {
+         padding: 30px;
+      }
+      .link-btn {
+         font-size: 14px;
+         font-weight: 500;
+      }
+      .blog-meta span {
+         display: inline-block;
+         margin-right: 10px;
+         font-size: 12px;
+      }
+   }
+}
+.vs-service-layout3{
+   .section-title{
+      .sec-title1{
+         color: $white-color;
+      }
+   }
+}
+.vs-service-layout3{
+   .service-list{
+      position: relative;
+      .service-item{
+         background-color: $white-color;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         margin-bottom: 10px;
+         &:last-child{
+            margin-bottom: 0;
+         }
+         padding: 20px 30px;
+         .service-content{
+            display: flex;
+            align-items: center;
+            .service-numbar{
+               display: block;
+               width: 60px;
+               height: 60px;
+               line-height: 60px;
+               font-weight: 600;
+               text-align: center;
+               color: $white-color;
+               background-color: $secondary-color;
+               border-radius: 50%;
+               margin-right: 80px;
+               transition: all 0.5s ease;
+            }
+            .service-title{
+               color: $black-color;
+               margin-bottom: 0;
+               &:hover{
+                  color: $secondary-color;
+               }
+            }
+         }
+         .service-img {
+            position: absolute;
+            right: 15%;
+            top: 50%;
+            transform: translateY(-50%);
+            img{
+               visibility: hidden;
+               opacity: 0;
+               transition: all 0.5s ease;
+            }
+         }
+         .service-btn{
+           .icon-btn{
+              color: $white-color;
+            background-color: $secondary-color;
+            transition: all 0.5s ease;
+           }
+         }
+        &:hover{
+            .service-btn{
+              .icon-btn{
+               background-color: $black-color;
+               color: $white-color;
+               i{
+                  transform: rotate(-40deg);
+               }
+              }
+            }
+            .service-img{
+               img{
+                  visibility: visible;
+                 opacity: 1;
+               }
+            }
+            .service-numbar{
+               color: $white-color;
+               background-color: $black-color;
+            }
+        }
+      }
+   }
+}
+.vs-blog-layout7{
+   .vs-blog{
+      position: relative;
+      margin-bottom: 0;
+      .blog-body {
+         color: var(--white-color);
+         border-bottom: 1px solid #C6C6C6;
+         padding-bottom: 5px;
+         margin-bottom: 16px;
+      }
+      &::before {
+         content: "";
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         top: 0;
+         left: 0;
+         background: rgb(0, 0, 0);
+         background: linear-gradient(183deg, rgba(0, 0, 0, 0.4878326331) 41%, rgb(0, 0, 0) 100%);
+         z-index: 1;
+     }
+      .blog-content{
+         position: absolute;
+         bottom: 0;
+         padding: 30px;
+         z-index: 1;
+         .blog-title{
+            color: $white-color;
+         }
+      }
+      .blog-meta span {
+         color: $white-color;
+         margin-bottom: 0;
+      }
+   }
+   .link-btn{
+      color: $white-color;
+   }
+}
+.vs-team-layout2{
+   .team-style3{
+      position: relative;
+      margin-bottom: 0;
+      border-radius: 200px 200px 50px 50px;
+      overflow: hidden;
+      .team-content {
+         bottom: 30px;
+         left: 50%;
+         position: absolute;
+         padding: 20px 50px 16px 30px;
+         border-radius: 50px;
+         background-color: #ffffff;
+         width: 90%;
+         transform: translateX(-50%);
+     }
+      .social-links {
+         position: absolute;
+         right: 10%;
+         top: unset;
+         bottom: 50px;
+         z-index: 2;
+         text-align: center;
+         opacity: 1;
+         visibility: visible;
+         transition: all ease 0.4s;
+         border-radius: 30px;
+         padding: 5px;
+         .vs-toggler{
+            background-color: $secondary-color;
+            color: $white-color;
+            box-shadow: none;
+            &:hover{
+               background-color: $black-color;
+               color: $white-color;
+               border-color: $black-color;
+            }
+         }
+         .toggle-menu{
+            margin-top: 0;
+         }
+      }
+   }
+}
+@include xl{
+   .counter-layout2{
+       .counter-style1 {
+         padding: 80px 15px 80px 15px;
+      }
+   } 
+}
+@include lg{
+   .counter-layout2{
+      .counter-style1 {
+         padding: 80px 0px 80px 0px;
+      }
+   } 
+   .vs-blog-layout6 .blog-left {
+      max-height: 770px;
+      padding-top: 356px;
+   }
+   .counter-layout2 {
+      transform: translateY(0%);
+   }
+   .vs-service-layout3{
+      .service-list{
+         .service-item{
+            .service-content{
+               .service-numbar {
+                  margin-right: 45px;
+               }
+            }
+         }
+      }    
+   } 
+   .vs-hero-layout3 .ls-v6 [class*="ls-gui-element ls-nav-"] {
+      display: none;
+   }
+   .vs-about-layout10 .image-box4{
+      padding-right: 0;
+      margin-bottom: 30px;
+      img{
+         width: 100%;
+      }
+      .small-img {
+         display: none;
+      }
+   } 
+   .appointment-form-layout3 {
+      box-shadow: none;
+      .from-area{
+         padding-top: 0;
+      }
+      &.background-image {
+         background-size: initial;
+      }
+   }
+   .counter-layout2 {
+      padding: 30px 0 60px 0;
+   }
+   .food-box-layout3{
+      .vs-btn {
+         margin-bottom: 20px;
+      }
+   }
+}
+@include md{
+   .vs-service-layout3 .service-list .service-item .service-img{
+      display: none;
+   }
+}
+@include sm{
+   .vs-blog-layout6{
+      .blog-left {
+         padding-top: 186px;
+         margin-bottom: 30px;
+         .blog-content{
+            padding: 30px;
+         }
+      }
+   }
+   .vs-about-layout10{
+      .image-box4{
+         padding-right: 0;
+         margin-bottom: 30px;
+         .small-img,
+         .about-image2 {
+            display: none;
+         }
+      } 
+   } 
+   .counter-layout2 {
+      transform: translateY(0%);
+      .media-body{
+         margin-bottom: 30px;
+      }
+      .counter-style1 {
+         padding: 80px 0px 50px 0px;
+      }
+   } 
+   .add-area{
+      margin-bottom: 30px;
+      .marquee-title {
+         font-size: 70px;
+      }
+   } 
+}
+@include xs{
+   .vs-blog-layout6{
+      .link-btn{
+         font-size: 14px;
+      }
+      .blog-meta span{
+         font-size: 12px;
+      }
+      .blog-left {
+         .blog-content{
+            padding: 20px;
+         }
+      }
+      .blog-style1 .blog-content {
+         padding: 20px;
+     }
+   } 
+   .vs-service-layout3{
+      .service-list{
+         .service-item{
+            padding: 20px 15px;
+            .service-content{
+               .service-numbar {
+                  margin-right: 10px;
+               }
+            }
+         }
+      }    
+   } 
+}

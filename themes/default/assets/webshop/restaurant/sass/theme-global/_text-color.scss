@@ -1,0 +1,17 @@
+@each $themeColor, $value in $themeColor {
+  .text-#{$themeColor} {
+    color: #{$value} !important;
+  }
+}
+
+.text-white-light {
+  color: rgba($color: #fff, $alpha: 0.65);
+}
+
+.text-red {
+  color: #e7272d !important;
+}
+
+.text-inherit {
+  color: inherit;
+}

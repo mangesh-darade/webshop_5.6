@@ -1,0 +1,10 @@
+@media screen and (min-width: 768px) {
+    .our-company2 .container .row > :nth-child(4) {
+       padding-left: 15% !important;
+    }
+
+    .our-company2 .container .row > :nth-child(5) {
+       padding-right: 16% !important
+       ;
+    }
+}

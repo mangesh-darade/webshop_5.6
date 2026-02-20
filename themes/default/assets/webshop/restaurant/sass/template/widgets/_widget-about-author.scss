@@ -1,0 +1,17 @@
+.widget {
+  .vs-widget-about-author {
+    .author-img {
+      @include equal-size(160px);
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .social-links {
+      a {
+        @include equal-size(30px);
+        line-height: 30px;
+        font-size: 12px;
+      }
+    }
+  }
+}

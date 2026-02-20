@@ -1,0 +1,49 @@
+.top-nav-product-finder {
+  display: none;
+}
+
+.b2g1h-notice {
+  margin-bottom: 20px;
+  padding: 15px;
+  overflow: auto;
+  background: #ccecff;
+  border: 1px dashed #5e93b1;
+}
+
+.b2g1h-notice h3,
+.b2g1h-notice h4 {
+  margin: 0 0 5px;
+}
+
+.b2g1h-notice p {
+  margin: 0 0 5px;
+}
+
+.b2g1h-notice img {
+  float: left;
+  margin-right: 15px;
+}
+
+.b2g1h-notice div {
+  overflow: hidden;
+}
+
+.b2g1h-notice .fine-print {
+  font-size: 12px;
+  color: #666;
+}
+
+@media (max-width: 512px) {
+  .b2g1h-notice img {
+    float: none;
+    margin-bottom: 5px;
+  }
+}
+
+.error-coupon-msg {
+  color: red;
+}
+
+.success-coupon-msg {
+  color: green;
+}

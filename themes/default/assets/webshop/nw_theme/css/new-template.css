@@ -1,0 +1,154 @@
+body > footer,
+nav,
+nav .close-nav {
+  background: #fff;
+}
+body > footer,
+body > footer .column a,
+nav a {
+  color: #000;
+}
+nav.shown {
+  border-left: 1px solid #ddd;
+}
+nav a {
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+header .show-my-account {
+  /* display: none !important; */
+  color: #000;
+}
+header .search-contain {
+  position: fixed;
+  z-index: 15;
+  top: 60px;
+  left: 50%;
+  right: auto;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 600px;
+  height: 0;
+  overflow: hidden;
+  background: #fff;
+  transition: height 0.2s ease-out;
+  transform: translateX(-50%);
+}
+header .search-contain form {
+  max-width: 728px;
+  padding: 0 20px;
+  margin: 15px auto;
+}
+header .search-contain.shown {
+  overflow: visible;
+}
+body > footer {
+  border-top: 1px solid #ddd;
+}
+body > footer .fine-print {
+  color: #999;
+}
+body > footer .sharing-links a {
+  color: #fff;
+}
+@media (min-width: 992px) {
+  header {
+    border-bottom: 1px solid #ddd;
+  }
+  nav a {
+    float: left;
+    color: #000;
+    border: none;
+    margin-top: 17px;
+    font-size: 16px;
+  }
+  .scrolly header nav a {
+    margin-top: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  header .search-contain {
+    float: none;
+    width: auto;
+    margin: 0 auto;
+    top: 60px;
+    max-width: 600px;
+  }
+  header .search-contain.shown {
+    height: 60px;
+  }
+  .scrolly .search-contain {
+    margin-top: 0;
+    top: 60px;
+  }
+  .scrolly .search-contain form {
+    margin: 15px auto;
+  }
+  .scrolly header {
+    box-shadow: none;
+  }
+  header .logo {
+    height: 40px;
+    margin-right: 20px;
+  }
+  header .show-search {
+    display: block !important;
+    right: 160px;
+    top: 25px;
+  }
+  header .show-my-account {
+    display: block !important;
+    position: absolute;
+    top: 30px;
+    right: 70px;
+  }
+  .scrolly .show-my-account,
+  /* .header .show-user, */
+  header .show-cart {
+    top: 20px;
+  }
+  .scrolly .show-search {
+    display: block !important;
+    right: 160px;
+    top: 15px;
+  }
+  .scrolly .show-cart {
+    top: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  nav a {
+    font-size: 20px;
+    margin-top: 23px;
+  }
+  .scrolly header nav a {
+    margin-top: 13px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  header .logo {
+    height: 60px;
+  }
+  .scrolly .search-contain,
+  header .search-contain {
+    top: 80px;
+  }
+  header .show-search {
+    top: 35px;
+  }
+  header .show-my-account {
+    top: 40px;
+  }
+  .scrolly .show-my-account,
+  /* .header .show-user, */
+  header .show-cart {
+    top: 30px;
+  }
+  .scrolly .show-search {
+    top: 25px;
+  }
+  .scrolly .show-cart {
+    /* .header .show-user  */
+    top: 20px;
+  }
+}

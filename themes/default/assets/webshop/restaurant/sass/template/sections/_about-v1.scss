@@ -1,0 +1,71 @@
+.about-image-box1 {
+  position: relative;
+  z-index: 1;
+
+  .about-image2 {
+    position: absolute;
+    right: -100px;
+    bottom: 0;
+    border: none;
+    z-index: 1;
+
+    &:before {
+      box-shadow: none;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: -10px;
+      top: -10px;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      z-index: -1;
+      opacity: 0.40;
+    }
+  }
+}
+
+
+.vs-about-layout1 {
+  .features-area {
+    background-size: auto auto;
+    background-position: right top;
+  }
+}
+
+
+@include md {
+  .about-image-box1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    margin-bottom: 30px;
+
+    .about-image2 {
+      position: relative;
+      bottom: 0;
+      left: 0;
+      margin-bottom: 0;
+      margin-right: 0;
+
+      &:after,
+      &:before {
+        display: none;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@include xs {
+  .about-image-box1 {
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+  }
+}

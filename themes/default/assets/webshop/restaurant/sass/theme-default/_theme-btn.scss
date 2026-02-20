@@ -1,0 +1,319 @@
+.vs-btn {
+  display: inline-block;
+  border: none;
+  font-size: 16px;
+  border-radius: 50px;
+  font-weight: 700;
+  padding: 17px 48px;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+  vertical-align: middle;
+  margin-right: 15px;
+ 
+
+  &:last-child,
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  @include xs {
+    margin-bottom: 20px;
+    margin-right: 0;
+
+    &:last-child,
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+
+  // .btn-text-mask {
+  //   display: inline-block;
+  //   position: absolute;
+  //   left: 0;
+  //   top: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   padding: inherit;
+  //   z-index: 2;
+  //   border-radius: inherit;
+  // }
+
+  // .btn-text {
+  //   position: relative;
+  //   z-index: 1;
+  //   color: $title-color;
+  // }
+
+
+  // &[class^="mask-"],
+  // &[class*="mask-"] {
+  //   background-color: $smoke-color;
+
+  //   .btn-text-mask {
+  //     color: $white-color;
+  //   }
+  // }
+
+  // &.mask-style1 {
+  //   .btn-text-mask {
+  //     @include button("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png", 2300%, 100%);
+  //     animation: maskAnimation2 0.7s steps(22) forwards;
+  //   }
+
+  //   &.active,
+  //   &:hover {
+  //     .btn-text-mask {
+  //       animation: maskAnimation 0.7s steps(22) forwards;
+  //     }
+  //   }
+  // }
+
+  // &.mask-style2 {
+  //   .btn-text-mask {
+  //     @include button("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png", 3000%, 100%);
+  //     animation: maskAnimation2 0.7s steps(29) forwards;
+  //   }
+
+  //   &.active,
+  //   &:hover {
+  //     .btn-text-mask {
+  //       animation: maskAnimation 0.7s steps(29) forwards;
+  //     }
+  //   }
+  // }
+
+  // &.mask-style3 {
+  //   .btn-text-mask {
+  //     @include button("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png", 2300%, 100%);
+  //     animation: maskAnimation 0.7s steps(22) forwards;
+  //   }
+
+  //   &.active,
+  //   &:hover {
+  //     .btn-text-mask {
+  //       animation: maskAnimation2 0.7s steps(22) forwards;
+  //     }
+  //   }
+  // }
+
+  // &.mask-style4 {
+  //   .btn-text-mask {
+  //     @include button("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png", 3000%, 100%);
+  //     animation: maskAnimation 0.7s steps(29) forwards;
+  //   }
+
+  //   &.active,
+  //   &:hover {
+  //     .btn-text-mask {
+  //       animation: maskAnimation2 0.7s steps(29) forwards;
+  //     }
+  //   }
+  // }
+
+  &.mask-style4,
+  &.mask-style3 {
+    background-color: $smoke-color;
+
+    &:hover {
+      color: $white-color;
+    }
+  }
+
+
+  &.mask-style1,
+  &.mask-style2,
+  &.style1 {
+    color: $white-color;
+
+    &.active,
+    &:hover {
+      color: $body-color;
+      background-color: $smoke-color;
+    }
+  }
+
+  &.style2 {
+
+    &.active,
+    &:hover {
+      color: $white-color;
+    }
+  }
+
+  &.style3 {
+    color: $white-color;
+
+    &:hover {
+      background-color: $white-color;
+      color: $title-color;
+    }
+  }
+
+  &.style-outline {
+    border: 2px solid #e1e1e1;
+    color: $body-color;
+    padding: 15px 48px;
+
+    &:hover {
+      color: $white-color;
+      background-color: $title-color;
+      border-color: transparent;
+    }
+  }
+
+  
+
+}
+
+
+
+.icon-btn {
+  @include equal-size(60px);
+  line-height: 62px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  background-color: $white-color;
+
+  &:hover {
+    color: $white-color !important;
+  }
+
+  &.text-red {
+    .number {
+      background-color: $title-color;
+    }
+  }
+}
+
+.dark-style {
+  .icon-btn:hover {
+    color: #fff;
+  }
+}
+
+// Play Button
+.play-btn {
+  position: relative;
+  border-radius: 50%;
+  display: inline-block;
+
+  >i {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    @include equal-size(60px);
+    line-height: 60px;
+    text-align: center;
+    color: $white-color;
+    font-size: 18px;
+    border-radius: inherit;
+    transition: all ease 0.4s;
+  }
+
+  &:hover {
+    >i {
+      background-color: $smoke-color;
+      color: $body-color;
+    }
+  }
+
+  .fa-play {
+    padding-left: 3px;
+  }
+
+  &:after,
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    @include equal-size(100%);
+    border-radius: inherit;
+    @extend .ripple-animation;
+    z-index: 1;
+  }
+
+  &:after {
+    @extend .ripple-ani-delay;
+  }
+
+}
+
+// Link Button
+.link-btn {
+  font-weight: 700;
+  display: inline-block;
+  line-height: 0.8;
+  color: $body-color;
+
+  i {
+    margin-left: 5px;
+  }
+}
+
+
+
+
+// Scroll To Top
+.scrollToTop {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  z-index: 94;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 18px;
+  color: #fff !important;
+  transition: all ease 0.8s;
+
+  &.show {
+    bottom: 30px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    bottom: -7px;
+    left: -7px;
+    border-width: 1px;
+    border-style: dashed;
+    border-radius: inherit;
+    @extend .ani-cspine;
+  }
+  &:hover{
+    &.icon-btn{
+      background-color: #B80011;
+    }
+    &.border-before-theme{
+      &::before{
+        border-color: #B80011
+      }
+    }
+    
+  }
+
+
+  @include sm {
+    @include equal-size(40px);
+    line-height: 40px;
+    right: 15px;
+    bottom: 50px;
+
+    &.show {
+      bottom: 15px;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+
+
+}

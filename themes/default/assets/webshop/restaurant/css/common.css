@@ -1,0 +1,148 @@
+/* @media screen and (max-width: 992px) { */
+#goToCartBtn {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  background-color: #fa8507;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 28px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.greyOutProduct {
+  background-color: #777777;
+  pointer-events: none;
+}
+
+.greyOutProductDetail {
+  background: #f6f6f6 !important;
+  pointer-events: none !important;
+  color: #777777 !important;
+}
+
+.restaurantClosed {
+  width: 100%;
+  background: #ffcfa9;
+  text-align: center;
+  padding: 1%;
+  font-weight: bolder;
+}
+
+.restaurantOpen {
+  display: none !important;
+}
+
+.close-img {
+  height: 10vh !important;
+  padding-right: 2%;
+  background-repeat: no-repeat;
+  object-fit: contain;
+}
+
+.close-text {
+  font-size: 1.5rem;
+}
+
+.productDetailsInfoPill {
+  text-align: center;
+  background: #707070;
+  color: white;
+  border-radius: 10px;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.product-details-available-banner {
+  /* background-color: #fa8507;
+  position: absolute; */
+  /* top: 4%; */
+  /* z-index: 1; */
+  /* padding: 1% 0% 1% 5%; */
+  /* width: 70%; */
+  /* border-radius: 0px 10px 10px 0px; */
+}
+
+#holiday-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0%;
+  background-color: #ffcfa9;
+  z-index: 1000;
+  /* font-size: 1.5rem; */
+  font-weight: bolder;
+  text-align: center;
+  color: black;
+  /* background-image: url("../img/closed-image.png"); */
+}
+
+#holiday-banner p {
+  /* width: 100%; */
+  color: black;
+  padding: 2%;
+  font-size: 1.3rem;
+  margin: 0%;
+}
+
+.greyOutProductImage:hover {
+  filter: brightness(0.7);
+}
+
+.food-image:hover .product-image-greyout {
+  background-color: #707070;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  padding: 3% 5% 3% 5%;
+  border-radius: 10px;
+  color: white;
+  z-index: 5;
+  font-weight: bolder;
+  display: inline-block;
+}
+
+.product-image-greyout {
+  display: none;
+}
+
+#locate {
+  /* color: white;
+  background-color: #fa8507;
+  border-radius: 50%;
+  padding: 1%; */
+}
+
+.card-fixed .vs-btn {
+  padding: 3% !important;
+  width: 100%;
+}
+
+.card-fixed {
+  min-height: auto !important;
+}
+
+.header-call-icon {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+html {
+  scrollbar-width: none;
+}

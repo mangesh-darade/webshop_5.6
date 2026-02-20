@@ -1,0 +1,42 @@
+@each $themeColor, $value in $themeColor {
+  .bg-#{$themeColor} {
+    background-color: #{$value} !important;
+  }
+}
+
+@each $themeColor, $value in $themeColor {
+  .bg-before-#{$themeColor}:before {
+    background-color: #{$value} !important;
+  }
+}
+
+@each $themeColor, $value in $themeColor {
+  .bg-after-#{$themeColor}:after {
+    background-color: #{$value} !important;
+  }
+}
+
+
+.background-image {
+  @include background-content(no-repeat, cover, center center);
+}
+
+.bg-fluid {
+  @include background-content(no-repeat, 100% 100%, center center);
+}
+
+.bg-auto {
+  background-size: auto auto;
+}
+
+.bg-bottom {
+  background-position: center bottom;
+}
+
+.bg-top {
+  background-position: center top;
+}
+
+.bg-fixed {
+  background-attachment: fixed;
+}

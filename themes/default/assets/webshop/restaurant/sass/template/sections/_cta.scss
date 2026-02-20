@@ -1,0 +1,41 @@
+.cta-layout2 {
+  .cta-inner {
+    box-shadow: 0 -5px 40px 0 rgba($color: #000000, $alpha: 0.08);
+    padding: 60px 60px 55px 60px;
+    position: relative;
+    margin-bottom: -109px;
+    background-color: $white-color;
+    z-index: 9;
+    border-radius: 10px;
+  }
+}
+
+
+@include lg {
+  .cta-layout2 {
+    .cta-inner {
+      padding: 50px 50px 45px 50px;
+      margin-bottom: -95px;
+    }
+  }
+}
+
+
+@include md {
+  .cta-layout2 {
+    .cta-inner {
+      padding: 30px 30px 40px 30px;
+      margin-bottom: 60px;
+    }
+  }
+}
+
+
+@include md {
+  .cta-layout2 {
+    .cta-inner {
+      padding: 20px 20px 30px 20px;
+      margin-bottom: 60px;
+    }
+  }
+}

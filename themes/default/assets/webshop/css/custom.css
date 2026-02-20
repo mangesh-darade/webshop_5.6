@@ -1,0 +1,81 @@
+#success_alert,
+#error_alert {
+  position: fixed;
+  z-index: 11000;
+  top: 90px;
+  right: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea,
+.input-text,
+select {
+  padding: 9px;
+  background-color: #fff;
+  color: #233729;
+  outline: none;
+  border: 0;
+  -webkit-appearance: none;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-weight: normal;
+  font-size: 1em;
+  border: 1px solid #c1c1c1;
+}
+
+#unique_id {
+  width: 100%;
+}
+
+.header-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10vw;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin: 0%;
+}
+
+.wishlist-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.cart-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+#menu-departments-menu {
+  width: 90%;
+  height: 70vh;
+  overflow: scroll;
+}
+
+#random {
+  width: 100%;
+}
+#navSearch :hover {
+  cursor: pointer;
+}
+
+#search_by_category {
+  width: 100% !important;
+}
+
+.nav-item :hover {
+  cursor: pointer !important;
+}

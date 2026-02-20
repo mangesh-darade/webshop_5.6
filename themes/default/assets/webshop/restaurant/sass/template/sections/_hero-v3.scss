@@ -1,0 +1,10 @@
+@media (min-width: $lg) and (max-width: $xl) {
+  .vs-hero-layout2 {
+    .vs-hero-carousel {
+      &.px-xl-130 {
+        padding-left: 80px;
+        padding-right: 80px;
+      }
+    }
+  }
+}

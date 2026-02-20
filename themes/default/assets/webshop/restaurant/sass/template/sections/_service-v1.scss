@@ -1,0 +1,70 @@
+.vs-service-layout1 {
+  .vs-service {
+    margin-bottom: 55px;
+  }
+
+  .service-content {
+    padding: 40px;
+    padding-bottom: 25px;
+  }
+
+  .shape1 {
+    top: 175px;
+    left: 125px;
+  }
+
+  .shape2 {
+    bottom: 130px;
+    right: 80px;
+  }
+
+  .vs-box1 {
+    .learn-more {
+      margin-left: 40px;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .icon-btn {
+      left: auto;
+      margin-left: 0;
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    &:hover {
+      .icon-btn {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      .learn-more {
+        margin-left: 0;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    
+  }
+
+
+}
+
+
+@include xl {
+  .vs-service-layout1 {
+    .shape2 {
+      bottom: 40px;
+      right: 120px;
+    }
+  }
+}
+
+@include lg {
+  .vs-service-layout1 {
+    .service-content {
+      padding: 20px;
+      padding-bottom: 20px;
+    }
+  }
+}

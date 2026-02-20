@@ -1,0 +1,534 @@
+.food-box-layout8 {
+   position: relative;
+   .vs-container{
+      position: relative;
+      z-index: 1;
+   }
+   .vs-food-box{
+      background-color: #B80011;
+      border-radius: 50px;
+      .food-inner{
+         padding: 60px 50px;
+      }
+      .vs-btn{
+         padding: 11px 49px;
+         color: $white-color;
+         background-color: $secondary-color;
+         border: 1px solid $secondary-color;
+         &:hover{
+            background-color: transparent;
+            border-color: $white-color;
+         }
+      }
+   }
+   .food-img{
+      position: relative;
+      .price{
+         padding: 50px 40px;
+         display: block;
+         background-color: $secondary-color;
+         text-align: center;
+         border-radius: 50%;
+         position: absolute;
+         bottom: -42%;
+         right: 20%;
+         color: $white-color;
+         span{
+            display: block;
+            font-size: 14px;
+            margin-bottom: 6px;
+         }
+         strong{
+            font-size: 40px;
+         }
+         
+      }
+   }
+   .food-inner {
+      display: flex;
+   }
+   .sec-subtitle{
+      text-transform: uppercase;
+   }
+   .sec-title1 {
+      text-transform: uppercase;
+   }
+   .food-title{
+      margin-bottom: 38px;
+      a{
+         color: $white-color;
+         font-size: 22px;
+         line-height: 33px;
+         font-weight: 400;
+         font-family: $theme-font1;
+      }
+   }
+   .food-subtitle{
+      font-size: 30px;
+      line-height: 60px;
+      font-weight: 700;
+      display: block;
+      color: $secondary-color;
+      text-transform: uppercase;
+   }
+   .slick-track {
+   min-width: 100%;
+   padding-bottom: 50px;
+   }
+   .vs-btn {
+      padding: 10px 40px;
+      text-transform: uppercase;
+   }
+   .slick-dots button {
+   background-color: rgb(217, 217, 217);
+   border: 1px solid transparent;
+   font-size: 0;
+   padding: 0;
+   line-height: 0;
+   width: 70px;
+   height: 5px;
+   border-radius: 0;
+   }
+   .slick-dots li.slick-active button {
+      background-color: var(--secondary-color);
+   }
+   .section-title {
+      margin-bottom: 40px;
+  }
+  .slick-slider .slick-list {
+   padding-bottom: 80px;
+   }
+   .slick-dots li {
+      width: 73px;
+      overflow: hidden;
+  }
+}
+
+.food-box-style1{
+   .vs-food-box{
+      border: 2px solid rgba(211, 211, 211, 1);
+      border-radius: 50px;
+      box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+      .btn-group{
+         width: 100%;
+         align-items: center;
+         justify-content: center;
+         position: absolute;
+         left: 0;
+         bottom: -5%;
+         visibility: hidden;
+         opacity: 0;
+         transition: all 0.4s ease;
+      }
+      .vs-btn {
+         font-weight: 700;
+         padding: 15px 50px;
+         margin-right: 15px;
+         margin-bottom: 0px;
+         text-transform: capitalize;
+         color: $white-color;
+         background-color: $secondary-color;
+         line-height: normal;
+         transition: all 0.5s ease;
+         &:hover{
+            background-color: #B80011;
+            color: $white-color;
+         }
+      }
+      .icon-btn{
+        border: 1px solid rgba(182, 181, 181, 1);
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        color: rgba(0, 0, 0, 1);
+        &:hover{
+           border-color: $secondary-color;
+        }
+      }
+      
+      &:hover{
+         border: 2px solid rgb(211 211 211 / 32%);
+        .btn-group{
+           visibility: visible;
+           opacity: 1;
+        }
+        .food-box-content::after{
+            background-color: #B80011;
+         }
+      }
+   }
+   .food-image{
+      margin-bottom: 30px;
+      padding: 40px 20px 0px 20px;
+   }
+   .food-content{
+      text-align: left;
+      padding: 0 40px 40px 40px;
+      .food-title{
+         text-transform: uppercase;
+         font-size: 20px;
+         font-weight: 700;
+         a{
+            color: $black-color;
+            &:hover{
+               color: $secondary-color;
+            }
+         }
+      }
+      .food-price{
+         color: $black-color;
+         display: inline-block;
+         font-size: 24px;
+         font-weight: 700;
+
+      }
+   }
+   .food-reating{
+      display: inline-block;
+      margin-bottom: 10px;
+      i{
+         font-size: 14px;
+         color: $secondary-color;
+      }
+   }
+   .food-box-content{
+      position: relative;
+      overflow: hidden;
+      border-radius: 50px;
+      &::after{
+         content: "";
+         position: absolute;
+         top: -36%;
+         right: -56%;
+         width: 374px;
+         height: 374px;
+         background-color: var(--secondary-color);
+         border-radius: 50%;
+         z-index: -1;
+         transition: all 0.5s ease;
+      }
+   }
+   .slick-track {
+      padding-bottom: 100px;
+   }
+   .slick-dots button {
+      background-color: rgba(217, 217, 217, 1);
+      border: 1px solid transparent;
+      font-size: 0;
+      padding: 0;
+      line-height: 0;
+      width: 73px;
+      height: 5px;
+      border-radius: 0;
+      margin-right: 5px;
+      overflow: hidden;
+   }
+   .slick-dots li.slick-active button{
+      margin-right: 5px;
+      background-color: $secondary-color;
+   }
+   .sec-subtitle{
+      text-transform: uppercase;
+   }
+   .sec-title1{
+      text-transform: uppercase;
+   }
+   .section-title {
+      margin-bottom: 30px;
+  }
+  .slick-dots li{
+   padding-left: 0;
+   width: 73px;
+   overflow: hidden;
+}
+}
+.food-box-style2{
+   background-color: #FFE9B5;
+   position: relative;
+   overflow: hidden;
+   .vs-container{
+      position: relative;
+      z-index: 1;
+   }
+   .food-box-head{
+      margin-bottom: 0;
+   }
+   .sec-title1{
+      text-transform: uppercase;
+      font-weight: 700;
+      color: $white-color;
+      margin-bottom: 20px;
+   }
+   .vs-btn {
+      font-weight: 700;
+      padding: 15px 50px;
+      margin-right: 15px;
+      margin-bottom: 0px;
+      text-transform: uppercase;
+      color: $white-color;
+      background-color: $secondary-color;
+      line-height: normal;
+      transition: all 0.5s ease;
+      &:hover{
+         background-color: #B80011;
+         color: $white-color;
+      }
+   }
+   .sec-text{
+      color: rgba(218, 218, 218, 1);
+      margin-bottom: 70px;
+   }
+   .food-box-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      img{
+         width: 36%;
+         height: 100%;
+      }
+   }
+   .vs-food-box{
+      display: flex;
+      align-items: center;
+      background-color: $white-color;
+      padding: 16px 22px;
+      border-radius: 50px;
+      position: relative;
+      overflow: hidden;
+      max-height: 194px;
+      .food-image{
+         margin-right: 15px;
+         position: relative;
+         z-index: 1;
+      }
+      &::after{
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 120px;
+         height: 194px;
+         background-color: var(--secondary-color);
+         border-radius: 50px;
+         z-index: 0;
+         transition: all 0.5s ease;
+      }
+      &:hover{
+         &::after{
+            background-color: #B80011;
+         }
+      }
+
+   }
+   .food-title{
+      font-size: 20px;
+      text-transform: uppercase;
+      a{
+         color: $black-color;
+         &:hover{
+            color: $secondary-color;
+         }
+      }
+      
+   }
+   .food-reating{
+      margin-bottom: 10px;
+      display: inline-block;
+      i{
+         color: $secondary-color;
+      }
+   }
+   .food-price{
+      display: inline-block;
+      font-size: 24px;
+      color: $black-color;
+      font-weight: 700;
+   }
+   .vs-food-box2 {
+      background-color: $white-color;
+      padding: 35px;
+      border-radius: 50px;
+      position: relative;
+      .food-image{
+         position: relative;
+         z-index: 1;
+         margin-bottom: 50px;
+      }
+      &::after{
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 132px;
+         background-color: var(--secondary-color);
+         border-radius: 50px;
+         z-index: 0;
+         transition: all 0.5s ease;
+      }
+      &:hover{
+         &::after{
+            background-color: #B80011;
+         }
+      }
+   }
+   .food-box-shep{
+      position: absolute;
+      right: 2%;
+      bottom: 25%;
+   }
+   .food-box-shep2 {
+      position: absolute;
+      left: 2%;
+      z-index: 1;
+      top: 6%;
+   }
+   .food-box-shep3 {
+      position: absolute;
+      right: 0;
+      top: 2%;
+      z-index: 0;
+   }
+}
+@media only screen and (max-width: 1880px){
+   .food-box-style2 .food-box-shep2 {
+      display: none;
+   }
+}
+@include xl{
+   .food-box-style2 .food-box-bg img {
+      width: 32%;
+      height: 100%;
+  }
+  .food-box-style1 .slick-track {
+      padding-bottom: 20px;
+   }
+   .food-box-layout8 .slick-slider .slick-list {
+      padding-bottom: 0px;
+   }
+}
+@include lg{
+   .food-box-style2{
+      .food-box-bg{
+         width: 100%;
+         height: 100%;
+         img{
+            width: 100%;
+            height: 100%;
+         }
+      }
+   }  
+   .food-box-style2 .vs-btn {
+      padding: 15px 40px;
+   }
+   .food-box-style2{
+      .food-box-shep,
+      .food-box-shep2,
+      .food-box-shep3 {
+         display: none;
+      } 
+   } 
+   .food-box-layout8 .food-img .price{
+      right: 10%;
+      padding: 30px 25px;
+   }
+   .food-box-layout8 .food-img .price strong {
+      font-size: 30px;
+   }
+   .food-box-style1 .slick-track {
+      padding-bottom: 20px;
+   }
+   .food-box-style2 .vs-food-box::after{
+      display: none;
+   }
+   .food-box-style2 .vs-food-box{
+      max-height: 170px;
+
+   }
+}
+@include md{
+   .food-box-style2 .sec-text {
+      margin-bottom: 30px;
+     }
+   .food-box-style2{
+      .food-box-head {
+         margin-bottom: 60px;
+      }
+      .vs-food-box2 {
+         margin-bottom: 30px;
+      }
+   } 
+   .food-box-layout8{
+      .food-content {
+         margin-bottom: 30px;
+      }
+     .food-inner {
+      display: block;
+      }
+      .vs-food-box .food-inner {
+         padding: 40px 30px;
+      }
+   }
+   .food-box-layout8 .food-img .price{
+      span{
+         margin-bottom: 0;
+      }
+      bottom: 0;
+   }
+   .food-box-layout8 .food-img .price strong {
+      font-size: 32px;
+   }
+   .food-box-style1 .slick-track {
+      padding-bottom: 20px;
+   }
+   .food-box-style2 .vs-food-box .food-image {
+      img{
+         max-width: 132px;
+      }
+   }
+   .food-box-style2 .vs-food-box{
+      max-height: 150px;
+
+   }
+   
+}
+@include sm{
+  .slick-track {
+      padding-bottom: 30px;
+  }
+  .food-box-style2{
+      .food-box-head {
+         margin-bottom: 60px;
+      }
+  }
+   .food-box-style2 .food-box-bg {
+      width: 100%;
+      height: auto;
+      display: none;
+  }
+  .food-box-style2 .sec-title1{
+     color: $black-color;
+  }
+  .food-box-style2 .sec-text {
+     color: $black-color;
+  }
+  .food-box-style2 .sec-text {
+   margin-bottom: 30px;
+  }
+  .food-box-style2 .vs-food-box::after{
+     display: none;
+  }
+  .food-box-layout8 .food-img .price {
+     background-color: #fa8507d1;
+     span{
+        margin-bottom: 0;
+     }
+     strong{
+        font-size: 24px;
+     }
+      padding: 20px;
+      bottom: -20px;
+  }
+}

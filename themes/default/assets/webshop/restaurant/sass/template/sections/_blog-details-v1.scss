@@ -1,0 +1,12 @@
+.blog-details-layout1 {
+  .blog-image {
+    position: relative;
+
+    .blog-category {
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      z-index: 2;
+    }
+  }
+}

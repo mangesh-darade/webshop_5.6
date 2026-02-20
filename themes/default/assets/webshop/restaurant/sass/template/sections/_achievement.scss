@@ -1,0 +1,106 @@
+.achievement-title{
+   a{
+      color: $black-color;
+      font-size: 40px;
+      cursor: pointer;
+      &:hover{
+         color: $secondary-color;
+      }
+   }
+   
+}
+.achievement-image {
+   margin-bottom: 45px;
+   width: 190px;
+   height: 190px;
+   line-height: 190px;
+   position: relative;
+   border-radius: 50%;
+   text-align: center;
+   a{
+      img{
+         max-width: 152px;
+         padding: 5px;
+      }
+   }
+  &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-width: 1px;
+      border:2px dashed;
+      border-radius: inherit;
+      border-color: $secondary-color;
+      animation: cspine 20s linear infinite;
+  }
+}
+.achievement-text{
+   font-size: 18px;
+   margin-bottom: 50px;
+}
+.achievement-time{
+   display: inline-block;
+   font-size: 22px;
+   color: $black-color;
+   font-weight: 500;
+}
+.achievement-line{
+   margin-left: 20px;
+   width: 100%;
+   height: 4px;
+   background-color: rgba(217, 217, 217, 1);
+}
+.achievement{
+   .section-title{
+      margin-bottom: 35px;
+   }
+   .arrow-has-margin .slick-arrow {
+      top: -14%;
+      top: -14%;
+      font-size: 20px;
+      width: 68px;
+      height: 68px;
+      line-height: 68px;
+      background-color: $secondary-color;
+      border-radius: 50%;
+      color: #ffffff;
+      cursor: pointer;
+      &:hover{
+         background-color: #B80011;
+         color: $white-color;
+      }
+  }
+  .slick-prev.slick-arrow {
+   right: 6%;
+   left: auto;
+   }
+   .slick-arrow.slick-next {
+      left: auto;
+      right: 0;
+   }
+   .row > .slick-list {
+      padding-top: 20px;
+  }
+}
+
+.achievement-content {
+   padding-right: 70px;
+}
+@include lg{
+   .achievement-title a {
+      font-size: 32px;
+  }
+}
+@include md{
+   .achievement-title a {
+      font-size: 28px;
+  }
+  .achievement{
+   .slick-track {
+      padding-bottom: 0;
+     }
+  }
+}

@@ -1,0 +1,56 @@
+.vs-about-layout7{
+   .about-img{
+      position: relative;
+      margin-top: -20%;
+      img{
+         width: 100%;
+      }
+   }
+   .about-shep2 {
+      position: absolute;
+      right: 5%;
+      bottom: 20%;
+  }
+  .vs-btn.mask-style1{
+     text-transform: uppercase;
+  }
+  .vs-btn.mask-style1:hover{
+      color: $white-color;
+      background-color: #B80011;
+  }
+  .sec-title1 {
+      text-transform: uppercase;
+  }
+  .sec-subtitle {
+     text-transform: uppercase;
+  }
+  .food-title{
+     text-transform: uppercase;
+     margin-bottom: 10px;
+  }
+}
+
+@include lg{
+   .vs-about-layout7{
+      .about-img {
+         margin-top: 60px;
+      }
+      .section-title {
+         margin-bottom: 40px;
+     }
+   }
+}
+
+@include md{
+   .vs-about-layout7 .about-img {
+      margin-top: 0;
+  }
+  .features-area {
+      margin-top: 60px;
+      margin-bottom: 60px;
+   }
+   .header-layout7{
+      position: relative;
+      width: 100%;
+   }
+}

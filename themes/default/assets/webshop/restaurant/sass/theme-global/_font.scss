@@ -1,0 +1,62 @@
+@each $themeFont, $value in $themeFont {
+  .text-#{$themeFont} {
+    font-family: #{$value};
+  }
+}
+
+.text-light {
+  font-weight: 300;
+}
+
+.text-normal {
+  font-weight: 400;
+}
+
+.text-medium {
+  font-weight: 500;
+}
+
+.text-semibold {
+  font-weight: 600;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+
+.text-style-italic {
+  font-style: italic;
+}
+
+.text-style-normal {
+  font-style: normal;
+}
+
+.text-xs {
+  font-size: 14px;
+}
+
+.text-sm {
+  font-size: 16px;
+}
+
+.text-md {
+  font-size: 18px;
+}
+
+.text-lg {
+  font-size: 22px;
+}
+
+.text-ml {
+  font-size: 28px;
+}
+
+.text-xl {
+  font-size: 32px;
+}
+
+.text-20 {
+  font-size: 20px;
+}

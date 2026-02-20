@@ -1,0 +1,111 @@
+.vs-blog-layout3 {
+
+  .blog-content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: $smoke-color;
+    padding: 0 40px;
+    padding-bottom: 23px;
+  }
+
+
+  .blog-category {
+    margin-top: -17.5px;
+    margin-bottom: 20px;
+
+    a {
+      &:hover {
+        background-color: $white-color;
+        color: $body-color;
+      }
+    }
+  }
+
+  .blog-title {
+    margin-bottom: 5px;
+    font-weight: 700;
+    a {
+      transition: all ease 0s;
+    }
+  }
+
+  .blog-img:before,
+  .blog-content,
+  .blog-title,
+  .blog-meta span i,
+  .blog-meta span {
+    transition: all ease 0.4s;
+  }
+
+  .blog-img {
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      opacity: 0;
+      visibility: hidden;
+      background-image: linear-gradient(to top, black 30%, rgba(0, 0, 0, 0) 80%);
+    }
+  }
+
+
+  .vs-blog {
+    position: relative;
+  }
+
+  .slick-center .vs-blog,
+  .vs-blog:hover {
+
+    .blog-content {
+      background-color: transparent;
+    }
+
+    .blog-meta span i,
+    .blog-meta span ,
+    .blog-title {
+      color: $white-color;
+    }
+    .blog-img:before {
+      opacity: 0.75;
+      visibility: visible;
+    }
+  }
+
+
+
+}
+
+
+@include lg {
+  .vs-blog-layout3 {
+    .blog-content {
+      padding: 30px;
+      padding-bottom: 15px;
+      padding-top: 0;
+    }
+  }
+}
+
+
+@include sm {
+  .vs-blog-layout3 {
+    .blog-content {
+      padding: 20px;
+      padding-bottom: 10px;
+      padding-top: 0;
+    }
+
+    .blog-category {
+      margin-bottom: 5px;
+    }
+  }
+}

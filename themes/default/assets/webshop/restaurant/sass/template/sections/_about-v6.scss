@@ -1,0 +1,14 @@
+.text-counter1 {
+  position: relative;
+  margin-top: 25px;
+
+  .counter {
+    font-size: 52px;
+    font-family: $theme-font3;
+    padding-bottom: 5px;
+  }
+
+  .counter-icon {
+    margin-right: 10px;
+  }
+}

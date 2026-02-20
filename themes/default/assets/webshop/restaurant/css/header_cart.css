@@ -1,0 +1,96 @@
+#mobileInput,
+#passwordInput {
+  
+  border-radius: 8px;
+}
+.rounded_custome{
+    border-radius: 12px !important;
+}
+input#mobileInput {
+    height: 34px !important;
+    color: #B0B0B0;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+}
+.mb-2.fw-semibold {
+    color: black;
+}
+button.btn.btn-outline-warning.w-100.fw-semibold{
+    width: 94%!important;
+    color: #fa8507!important;
+    border-color: #fa8507!important;
+    margin-top: 15px;
+}
+button.btn.btn-outline-warning.w-100.fw-semibold:hover {
+    background-color: #fa8507 !important;
+    color: #fff !important; /* Optional: white text for contrast */
+    border-color: #fa8507 !important;
+}
+a.text-decoration-none.text-warning.fw-semibold {
+    color: #000000 !important;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    text-decoration: underline !important;
+}
+a.text-decoration-none.text-warning.fw-semibold:hover {
+    color:#fa8507!important;
+}
+button#loginBtn{
+    color: white!important;
+    background-color: #fa8507!important;
+    border-color: #fa8507!important;
+    width: 100%!important;
+}
+h5.text-dark.mb-1.headerstyle{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 100%;
+    text-align: center;
+    padding-bottom: 22px;
+}
+small.form-text.text-muted.text-left.mb-3{
+    color:#000000!important;
+}
+.text-muted.small.mb-2.mt-3.signbold {
+    color: #000000 !important;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.fw-semibold {
+    color: #000000;
+}
+a.text-warning.small.fw-semibold.text-decoration-none.Forgot.pass {
+    display: flex!important;
+    margin-bottom: 32px!important;
+    color:#fa8507!important;
+}
+input[type="checkbox"] ~ label:before {
+    content: "";
+    font-family: var(--icon-font);
+    font-weight: 700;
+    position: absolute;
+    left: 3px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    height: 17px;
+    width: 16px;
+    line-height: 18px;
+    text-align: center;
+    font-size: 9px;
+}
+ input[type="checkbox"] ~ label {
+    position: relative;
+    padding-left: 26px;
+    cursor: pointer;
+    display: block;
+    margin-top: -17px!important;
+    color: black !important;
+}

@@ -1,0 +1,334 @@
+/*
+Template Name: Grillino
+Template URL: https://themeforest.vecuro.com/html/grillino
+Description: Kokan Bag
+Author: Vecuro
+Author URI: https://themeforest.net/user/vecuro_themes
+Version: 1.0
+*/
+/*=================================
+    CSS Index End
+==================================*/
+/*
+01. Variable
+02. Mixin
+03. Function
+04. Typography
+05. Bootstrap Overwrite
+06. Vendor Custom Style 
+    6.1. Nice Select
+    6.2. Slick Slider 
+    6.3. VS Mobile Menu 
+    6.4. Date & Time Picker
+    6.5. Flaticon
+    6.6. Layer Slider
+    07. Theme Default
+    7.1. Preloader
+    7.2. Theme Buttons
+    7.3. Section Title
+    7.4. Common Layout
+08. Template Style
+    8.1. Header
+    8.2. Widget
+    8.3. Footer
+    8.4. Breadcumb
+    8.5. Popup Search
+    8.6. Popup Side Menu
+    8.7. Pagination
+    8.8. Blog
+    8.9. Hero
+    8.10. Service
+    8.11. About
+    8.12. Food Box & List
+    8.13. Food Menu
+    8.14. Gallery
+    8.15. Testimonial
+    8.16. Subscribe
+    8.17. Appointment
+    8.18. Feature
+    8.19. Progress Bar
+    8.20. Reservation
+    8.21. Team
+    8.22. Brand
+    8.23. Contact
+    8.24. Comments
+    8.25. Checkout
+    8.26. Cart
+    8.27. Shop Cart
+09. Theme Global
+    9.1. Font
+    9.2. Background
+    9.3. Text Color
+    9.4. Border
+    9.5. Border Radius
+    9.6. Overlay
+10. Animation
+11. Extend
+12. Spacing
+
+*/
+
+/*=================================
+    CSS Index End
+==================================*/
+
+/*=================================
+    01. Variable
+==================================*/
+@import "variable/variable";
+
+/*=================================
+    02. Mixin
+==================================*/
+@import "mixin/mixin";
+
+/*=================================
+    03. Function
+==================================*/
+@import "function/function";
+
+/*=================================
+    04. Typography
+==================================*/
+@import "typography/typography";
+
+/*=================================
+    05. Bootstrap Overwrite
+==================================*/
+@import "reset/bootstrap";
+
+/*=================================
+    06. Vendor Custom Style
+==================================*/
+/*------------------- 6.1. Nice Select -------------------*/
+@import "vendor/select-box";
+
+/*------------------- 6.2. Slick Slider -------------------*/
+@import "vendor/slick-slider";
+
+/*------------------- 6.3. VS Mobile Menu -------------------*/
+@import "vendor/vsmenu";
+
+/*------------------- 6.4. Date & Time Picker -------------------*/
+@import "vendor/datetimepicker";
+
+/*------------------- 6.5. Flaticon -------------------*/
+@import "vendor/flaticon";
+
+/*------------------- 6.6. Layer Slider -------------------*/
+@import "vendor/layerslider";
+
+/*=================================
+    07. Theme Default
+==================================*/
+
+/*------------------- 7.1. Preloader -------------------*/
+@import "theme-default/preloader";
+
+/*------------------- 7.2. Theme Buttons -------------------*/
+@import "theme-default/theme-btn";
+
+/*------------------- 7.3. Section Title -------------------*/
+@import "theme-default/section-title";
+
+/*------------------- 7.4. Common Layout -------------------*/
+@import "theme-default/common";
+
+/*=================================
+    08. Template Style
+==================================*/
+
+/*------------------- 8.1. Headers  -------------------*/
+@import "template/headers/header-v1";
+@import "template/headers/header-v2";
+@import "template/headers/header-v3";
+@import "template/headers/header-v4";
+@import "template/headers/header-v6";
+@import "template/headers/header-v7";
+@import "template/headers/header-sticky";
+
+/*------------------- 8.2. Widgets  -------------------*/
+@import "template/widgets/widget-sidebar";
+@import "template/widgets/widget-footer";
+@import "template/widgets/widget-default-list";
+@import "template/widgets/widget-search";
+@import "template/widgets/widget-about-author";
+@import "template/widgets/widget-tagcloud";
+@import "template/widgets/widget-recent-post";
+@import "template/widgets/widget-instagram-feeds";
+@import "template/widgets/widget-newsletter";
+@import "template/widgets/widget-shopping-cart";
+
+/*------------------- 8.3. Footers  -------------------*/
+@import "template/footers/footer-v1";
+@import "template/footers/footer-v2";
+@import "template/footers/footer-v3";
+
+/*------------------- 8.4. Breadcumb  -------------------*/
+@import "template/breadcumb/breadcumb-v1";
+
+/*------------------- 8.5. Popup Search  -------------------*/
+@import "template/sections/popupsearch-v1";
+
+/*------------------- 8.6. Popup Side Menu  -------------------*/
+@import "template/sections/sidemenu-v1";
+
+/*------------------- 8.7. Pagination  -------------------*/
+@import "template/sections/pagination-v1";
+
+/*------------------- 8.8. Blog  -------------------*/
+@import "template/sections/blog-v1";
+@import "template/sections/blog-v2";
+@import "template/sections/blog-v3";
+@import "template/sections/blog-v4";
+@import "template/sections/blog-v5";
+@import "template/sections/blog-list-v1";
+@import "template/sections/blog-details-v1";
+
+/*------------------- 8.9. Hero  -------------------*/
+@import "template/sections/hero-v1";
+@import "template/sections/hero-v3";
+
+/*------------------- 8.10. Service  -------------------*/
+@import "template/sections/service-v1";
+
+/*------------------- 8.11. About  -------------------*/
+@import "template/sections/about-v1";
+@import "template/sections/about-v2";
+@import "template/sections/about-v3";
+@import "template/sections/about-v4";
+@import "template/sections/about-v5";
+@import "template/sections/about-v6";
+@import "template/sections/about-v7";
+@import "template/sections/about-v8";
+@import "template/sections/about-v9";
+@import "template/sections/about-v10";
+
+/*------------------- 8.12. Food Box & List -------------------*/
+@import "template/sections/food-box-v1";
+@import "template/sections/food-box-v2";
+@import "template/sections/food-box-v3";
+@import "template/sections/food-box-v4";
+@import "template/sections/food-box-v5";
+@import "template/sections/food-box-v6";
+@import "template/sections/food-box-v7";
+@import "template/sections/food-box-v8";
+@import "template/sections/food-slider-v1";
+@import "template/sections/food-list-v1";
+@import "template/sections/food-menu-details";
+
+/*------------------- 8.13. Food Menu  -------------------*/
+@import "template/sections/food-menu-v1";
+@import "template/sections/food-menu-v2";
+@import "template/sections/food-menu-v3";
+
+/*------------------- 8.14. Gallery  -------------------*/
+@import "template/sections/gallery-v1";
+
+/*------------------- 8.15. Testimonial  -------------------*/
+@import "template/sections/testimonial-v1";
+@import "template/sections/testimonial-v2";
+@import "template/sections/testimonial-v3";
+@import "template/sections/testimonial-v4";
+
+/*------------------- 8.16. Subscribe  -------------------*/
+@import "template/sections/subscribe-form-v1";
+
+/*------------------- 8.17. Appointment  -------------------*/
+@import "template/sections/appointment-form-v1";
+@import "template/sections/appointment-form-v2";
+@import "template/sections/appointment-form-v3";
+
+/*------------------- 8.18. Feature  -------------------*/
+@import "template/sections/feature-v1";
+@import "template/sections/feature-v2";
+
+/*------------------- 8.19. Progress Bar  -------------------*/
+@import "template/sections/progress-bar-v1";
+
+/*------------------- 8.20. Reservation  -------------------*/
+@import "template/sections/reservation-v1";
+@import "template/sections/reservation-v2";
+
+/*------------------- 8.21. Team  -------------------*/
+@import "template/sections/team-v1";
+@import "template/sections/team-v2";
+@import "template/sections/team-v3";
+@import "template/sections/team-details-v1";
+
+/*------------------- 8.22. Brand  -------------------*/
+@import "template/sections/brand-v1";
+
+/*------------------- 8.23. Contact  -------------------*/
+@import "template/sections/contact-form-v2";
+@import "template/sections/contact-map";
+
+/*------------------- 8.24. Comments  -------------------*/
+@import "template/sections/blog-comments-v1";
+
+/*------------------- 8.25. Checkout  -------------------*/
+@import "template/sections/checkout";
+
+/*------------------- 8.26. Cart  -------------------*/
+@import "template/sections/cart";
+
+/*------------------- 8.27. Shop Cart  -------------------*/
+@import "template/sections/shop-sortbar-v1";
+@import "template/sections/shop-tab-v1";
+@import "template/sections/shop-v1";
+@import "template/sections/shop-details-v1";
+
+/*------------------- 8.28. CTA Area  -------------------*/
+@import "template/sections/cta";
+
+/*------------------- 8.28. Achievement Area  -------------------*/
+@import "template/sections/achievement";
+
+/*------------------- 8.29. Banner Area  -------------------*/
+@import "template/sections/banner-v1";
+
+/*=================================
+    09. Theme Global
+==================================*/
+/*------------------- 9.1. Font -------------------*/
+@import "theme-global/font";
+
+/*------------------- 9.2. Background -------------------*/
+@import "theme-global/background";
+
+/*------------------- 9.3. Text Color -------------------*/
+@import "theme-global/text-color";
+
+/*------------------- 9.4. Border -------------------*/
+@import "theme-global/border";
+
+/*------------------- 9.5. Border Radius -------------------*/
+@import "theme-global/border-radius";
+
+/*------------------- 9.6. Overlay -------------------*/
+@import "theme-global/overlay";
+
+/*=================================
+    10. Theme Animation
+==================================*/
+@import "animation/animation";
+
+/*=================================
+    11. Extend
+==================================*/
+@import "extend/extend";
+
+/*=================================
+    12. Spacing
+==================================*/
+@import "spacing/spacing";
+
+/*=================================
+    00. Color Plate
+==================================*/
+@import "vendor/color-plate";
+/*=================================
+    00. Pages
+==================================*/
+@import "template/pages/home-8";
+@import "template/pages/home-9";

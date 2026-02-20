@@ -1,0 +1,46 @@
+.vs-widget-recent-post {
+  a {
+    color: inherit;
+  }
+
+  .recent-post-title {
+    font-size: 18px;
+  }
+
+  .recent-post {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  span {
+    font-size: 14px;
+
+    i {
+      margin-right: 7px;
+    }
+  }
+
+  .vs-carousel {
+
+    .recent-post {
+      position: relative;
+      margin-bottom: 0;
+    }
+
+    img {
+      width: 100%;
+    }
+    
+    .post-date {
+      position: absolute;
+      left: 15px;
+      bottom: 15px;
+      line-height: 1;
+      z-index: 2;
+    }
+  }
+
+}

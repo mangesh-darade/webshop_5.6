@@ -1,0 +1,23 @@
+.food-list-layout1 {
+  .food-list-top {
+    border-bottom: 1px dashed #cecece;
+    padding-bottom: 7px;
+    margin-bottom: 5px;
+  }
+
+  .food-list-title {
+    @media (min-width: $xl) {
+      font-size: 22px;
+    }
+  }
+
+  .food-list-box {
+    margin-bottom: 25px;
+
+    &:last-of-type,
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+}

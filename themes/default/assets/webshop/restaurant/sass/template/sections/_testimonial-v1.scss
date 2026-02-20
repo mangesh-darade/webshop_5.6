@@ -1,0 +1,49 @@
+.vs-testimonial-layout1 {
+  .vs-testimonial-area {
+    @include equal-size(575px);
+    margin: 0 auto;
+    box-shadow: 0px 0px 100px 0px rgba(35, 38, 46, 0.2);
+  }
+
+  .testimonial-text {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .testimonial-author-avater {
+    margin-bottom: 5px;
+  }
+
+  .shape1 {
+    top: -100px;
+    left: 0;
+  }
+
+}
+
+
+@include xl {
+  .vs-testimonial-layout1 {
+    .shape1 {
+      top: 100px;
+    }
+  }
+}
+
+@include lg {
+  .vs-testimonial-layout1 {
+    .vs-testimonial-area {
+      @include equal-size(500px);
+    }
+  }
+}
+
+@include sm {
+  .vs-testimonial-layout1 {
+    .vs-testimonial-area {
+      max-width: 100%;
+      border-radius: 0;
+      height: auto;
+    }
+  }
+}
