@@ -224,14 +224,48 @@ function baseurl($uri){
 function elintom_image_url($image_path = '', $subfolder = 'uploads') {
     $CI = get_instance();
     
-    // Load elintom_images config if not already loaded
-    $CI->config->load('elintom_images', TRUE);
+    // Try to get values from webshop_settings table first
+    if (!isset($CI->webshop_model)) {
+        $CI->load->model('webshop_model');
+    }
+    $webshop_settings = $CI->webshop_model->get_webshop_settings();
     
-    $elintom_base_url = rtrim($CI->config->item('elintom_base_url', 'elintom_images'), '/');
-    $elintom_image_path = trim($CI->config->item('elintom_image_path', 'elintom_images'), '/');
-    $customer_folder = $CI->config->item('elintom_customer_folder', 'elintom_images');
+    // Get elintom_base_url from database or config
+    if (!empty($webshop_settings) && isset($webshop_settings->elintom_base_url) && !empty($webshop_settings->elintom_base_url)) {
+        $elintom_base_url = rtrim($webshop_settings->elintom_base_url, '/');
+    } else {
+        // Fallback to config file
+        $CI->config->load('elintom_images', TRUE);
+        $elintom_base_url = rtrim($CI->config->item('elintom_base_url', 'elintom_images'), '/');
+    }
     
-    // If customer folder is not set in config, use the current subdomain
+    // Get elintom_image_path from database or config
+    if (!empty($webshop_settings) && isset($webshop_settings->elintom_image_path) && !empty($webshop_settings->elintom_image_path)) {
+        $elintom_image_path = trim($webshop_settings->elintom_image_path, '/');
+    } else {
+        // Fallback to config file
+        if (!isset($CI->config->config['elintom_images'])) {
+            $CI->config->load('elintom_images', TRUE);
+        }
+        $elintom_image_path = trim($CI->config->item('elintom_image_path', 'elintom_images'), '/');
+        // Default value if not in config
+        if (empty($elintom_image_path)) {
+            $elintom_image_path = 'assets/mdata';
+        }
+    }
+    
+    // Get customer_folder from database or config
+    if (!empty($webshop_settings) && isset($webshop_settings->elintom_customer_folder) && !empty($webshop_settings->elintom_customer_folder)) {
+        $customer_folder = $webshop_settings->elintom_customer_folder;
+    } else {
+        // Fallback to config file
+        if (!isset($CI->config->config['elintom_images'])) {
+            $CI->config->load('elintom_images', TRUE);
+        }
+        $customer_folder = $CI->config->item('elintom_customer_folder', 'elintom_images');
+    }
+    
+    // If customer folder is still not set, use the current subdomain
     if (empty($customer_folder)) {
         $host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : '';
         $subdomain = explode('.', $host)[0];
@@ -239,7 +273,16 @@ function elintom_image_url($image_path = '', $subfolder = 'uploads') {
     }
     
     // Build the base URL path
-    $base_path = $elintom_image_path . '/' . $customer_folder . '/' . trim($subfolder, '/');
+    // Handle subfolder structure: thumbs is a subfolder of uploads
+    if ($subfolder == 'thumbs') {
+        // thumbs is inside uploads folder: assets/mdata/{customer}/uploads/thumbs/
+        $base_path = $elintom_image_path . '/' . $customer_folder . '/uploads/' . trim($subfolder, '/');
+    } else {
+        // For 'uploads', 'images', or other folders, use directly
+        // uploads: assets/mdata/{customer}/uploads/
+        // images: assets/mdata/{customer}/images/ (for theme assets)
+        $base_path = $elintom_image_path . '/' . $customer_folder . '/' . trim($subfolder, '/');
+    }
     
     // Build the full URL
     $url = $elintom_base_url . '/' . $base_path;
